@@ -1,0 +1,14 @@
+a{
+    color: blue;
+    text-decoration: none;
+    background-color: rgb(60, 255, 0);
+    font-size: 25px;
+}
+
+a:hover{
+    /* border: 5px dotted cyan; */
+    color: white;
+    background-color: black;
+    font-size: 50px;
+
+}
