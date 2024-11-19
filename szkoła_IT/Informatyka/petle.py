@@ -5,7 +5,7 @@ while warunek:
     inkrementacja(zwiększenie o 1)'''
 
 # wyświetla zmienną i dopóki będzie <10
-pauza="--------------------"
+pauza="---------------------------------------"
 i=1
 # nigdy w warunku jest równe
 # tylko mniejsze bądz równe
@@ -40,4 +40,30 @@ print(pauza)
 for i in range(zakres):
     instrukcje'''
 
-# for 1-10
+# for 1-10 (w wartości końcowej wpisz +1)
+
+for i in range(0,11):
+    print(i, end=" ")
+
+print(pauza)
+print(pauza)
+
+# wypisz 20 pierwszych
+
+for i in range(20):
+    print(i)
+
+print(pauza)
+
+# 0-100 co 10
+
+for i in range(0,101,10):
+    print(i)
+
+
+print(pauza)
+
+# od 50-0 co 5
+
+for i in range(50,-1,-5):
+    print(i)
