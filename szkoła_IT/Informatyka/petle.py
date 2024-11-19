@@ -67,3 +67,13 @@ print(pauza)
 
 for i in range(50,-1,-5):
     print(i)
+
+
+print(pauza)
+
+
+# python
+
+txt="python"
+for litera in txt:
+    print(litera)
