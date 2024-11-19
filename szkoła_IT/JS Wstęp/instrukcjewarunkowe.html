@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrukcje Warunkowe</title>
+</head>
+
+<body>
+    <script>
+        /* SKŁADNIA
+        if(warunek){
+            instrukcja gdy warunek jest spełniony
+            }
+        else{
+        Instrukcja gdy warunek nie jest spełniony
+    }
+        if(warunek1){
+            Instrukjca gdy warunek1 jest spełniony        
+    }
+        else if(warnek2){
+            Instrukcja gdy warunek2 jest spełniony
+    }
+        else{
+            Instrukcja gdy ŻADEN warunek nie jest spełniony
+    }
+    
+        */
+
+        // let x = prompt("Podaj dowolną liczbę ")
+        // // Sprawdza czy liczba jest + , - czy 0
+
+        // if (x > 0) {
+        //     alert("Ta liczba jest dodatnia");
+        // }
+        // else if (x == 0) {
+        //     alert("Podano Zero")
+        // }
+        // else {
+        //     alert("Liczba jest ujemna")
+        // }
+        // Sprawdzanie Oceny
+
+
+        let oc = prompt("Podaj ocene z ostatniego sprawdzianu (bez plusów i minusów)")
+
+        if (oc == 6) {
+            document.write('Brawo Ty!')
+        }
+        else if (oc <= 5 && oc >= 4) {
+            document.write('Całkiem dobrze!')
+        }
+        else if (oc == 3) {
+            document.write('Dostatecznie')
+        }
+        else if (oc >= 1 && oc <= 2) {
+            document.write('umów się na poprawe')
+        }
+        else {
+            document.write('niewłaściwa wartość')
+        }
+        let ocena = prompt("wpisz ocene z zakresu od 1-6")
+
+        // switch (ocena) {
+        //     case "1":
+        //         alert("Szykuj się na poprawe")
+        //         break;
+        //     case "2":
+        //         alert("marny wynik")
+        //         break;
+        //     case "3":
+        //         alert("nawet nawet")
+        //         break;
+        //     case "4":
+        //         alert("Git")
+        //         break;
+        //     case "5":
+        //         alert("Bardzo dobrze")
+        //         break;
+        //     case "6":
+        //         alert("Brawo Ty!")
+        //         break;
+
+        // }
+
+        // let odpowiedz = parseInt(prompt("W którym roku narodził się JavaScript"));
+        // switch (odpowiedz) {
+        //     case 1995:
+        //         alert('Super dobra odpowiedź');
+        //         break;
+        //     case 1994:
+        //         alert('W granicach błędu. poprawna odpowiedź to 1995');
+        //         break;
+        //     case 1996:
+        //         alert('W granicach błędu. poprawna odpowiedź to 1995');
+        //         break;
+        //     default:
+        //         alert("Zła odpowiedź");
+        //         break;
+        // }
+
+
+        let info = prompt("Jaka jest twoja ulubiona członkini shadow garden z anime eminence in shadow")
+        if (info == "Delta" || info == "delta") {
+            document.write("Bardzo dobry wybór")
+        }
+        else {
+            document.write('Nie masz gustu')
+        }
+
+
+    </script>
+
+</body>
+
+</html>

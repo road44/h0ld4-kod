@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wstęp JS</title>
+</head>
+
+<body>
+    <h3>JavaScript wprowadzenie</h3>
+    instrukcja document.write pozwala wyświetlić coś na stronie
+    <br />
+    <br />
+    console.log pozwala wyświetlić efekt działania w konsoli
+    <br />
+    <br />
+    <h4>TZW. Dobre praktyki w JS</h4>
+    <ul>
+        <li>zmiennym nadawaj angielskie nazwy</li>
+        <li>wielkość liter ma zanczenie</li>
+        <li>nazwa nie powinna zaczynać się od cyfry ani wielkiej litery</li>
+        <li>przy nazwach dwuczłonowych użyj znaku _ (tzw notacja wielbłądzia)</li>
+        <li>w nazwach zmiennych nie używaj tzw słów zarezerwowanych </li>
+        <li>w nazwach zmiennych nie używaj polskich znaków diakrytycznych</li>
+    </ul>
+    <script>
+        document.write("<br> Pierwsze kroki w VSC");
+        console.log("Ten tekst będzie widoczny w konsoli");
+        // alert("To jest okienko dialogowe")
+        // zmienne - let i const
+
+        var a = 5;
+        let name = "Filip";
+        let wiek = 16;
+        // wylogowuje w konsoli
+        console.log(name);
+        console.log(wiek);
+        // wyświetla na stronie
+
+        document.write("<br><br>" + name);
+        document.write(" " + wiek);
+        // const name="Alvert";
+        // nadpisanie zmiennej nową wartością
+        name = "Albert"
+        console.log(name);
+    </script><br><br>
+    <a href="operatory.html">operatory</a> <br>
+    <a href="instrukcjewarunkowe.html">instrukcje warunkowe</a>
+</body>
+
+</html>
