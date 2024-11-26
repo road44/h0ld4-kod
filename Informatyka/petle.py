@@ -110,3 +110,8 @@ print(pauza)
 print("Podaj dwie liczby: ")
 a=int(input("Pierwsza liczba\n"))
 b=int(input("Druga liczba\n"))
+
+if b!=0 and a!=0:
+    print(f"Iloraz liczb wynosi {a/b}")
+else:
+    print("Nie dziel przez zero")
