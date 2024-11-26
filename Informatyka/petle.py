@@ -1,5 +1,4 @@
 '''składnia pętli while
-
 while warunek:
     instrukcje, gry war. jest spełniony 
     inkrementacja(zwiększenie o 1)'''
@@ -77,3 +76,32 @@ print(pauza)
 txt="python"
 for litera in txt:
     print(litera)
+
+print(pauza)
+#  użycie break
+
+i=1
+while i<10:
+    print(i)
+    if i==6:
+        break
+    i+=1
+
+
+print(pauza)
+
+# user wpisuje jakiś tekst 
+# pętla iteruje (kręci się) po tym tekscie
+
+x=input("Wpisz jakiś tekst\n")
+# a=input()
+# a=int(input())
+print("Poszczegulne litery wpisanego tekstu:\n")
+for znak in x:
+    print(znak, end=" " ) 
+print(pauza)
+print(pauza) 
+
+
+
+print(5/0)
