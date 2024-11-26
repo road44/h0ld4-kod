@@ -104,4 +104,9 @@ print(pauza)
 
 
 
-print(5/0)
+# user podaje dwie liczby 
+# wykonaj dzielenie z uwzględnieniem zasady nie dziel przez zero
+
+print("Podaj dwie liczby: ")
+a=int(input("Pierwsza liczba\n"))
+b=int(input("Druga liczba\n"))
