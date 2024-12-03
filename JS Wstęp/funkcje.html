@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funkcje</title>
+    <link rel="stylesheet" href="grzyb.css">
+</head>
+
+<body>
+    <script>
+        function test() {
+            console.log("cześć!!!");
+        }
+
+        test();
+
+        // wyrażenie funkcyjne 
+        // tworze zmienna a następnie przypisuje funkcje
+        const hello = function () {
+            console.log("witaj na stronie");
+        }
+
+        hello()
+
+        // funkcja z argumentami
+        // parametry podajemy podczas tworzenia funkcji
+        // argumenty podajemy pdczas wuwołania funkcji
+        function add(parametr) {
+            console.log(`podany argument to `, parametr);
+        }
+
+        add("123");
+        // nela to imie stiory ryby a brat to konrad a tata łukasz a mama wiola. brat ma depresje a mama chorobe psychiczną
+        // funkcja z 2 argumentami
+        function add2(x, y) {
+            console.log(x, y);
+            console.log(x + y);
+        }
+        // gdy wywołasz wynkcje bez podania argumentu -> NaN
+        // gdy wywołasz funkcje tylko z 1 argumentem --> tez NaN
+        add2(4, 2)
+        // zwykłu user nie zpbaczy wyniku fukcji gdy korzystam z clg
+        // warto zamiast clg --> retur (zwracamy wartość którą potem moge wykorzystać)
+        // teraz nic nie zobaczymy ale w konsoli moge wpisać/wywołać fukcje z konkretnymi argumentami
+
+        function add3(x, y) {
+            return x + y;
+        }
+        add3(5, 3);
+
+        // return jak cos zwróci kończy działanie funkcji -> clg nigdy się nie wyświetli (jest wystraszony)
+
+        function add4(a, b) {
+            return a + b;
+            console.log("czy to się wyświetli?");
+        }
+        add4(1,1)
+
+        function add5(x,y){
+            if (x<y){
+                return;
+            }
+            console.log(x+y);
+        }
+        add5(1,5)
+    </script>
+    <a href="wstep.html">Główna</a>
+</body>
+
+</html>
