@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grzyb.css">
+</head>
+
+<body>
+    <script>
+        // deklaracja tablicy
+        let tab = [90, 1, 2, 78, ,1028, 589, -47, 54, -5]
+        // tab z użciem array
+        let tab2 = new Array('Zuzia', 'Ola', 'Iza', "Basia", 'Adam', 'Anna')
+        // różne typy danych
+        let mix = ["lekcja", 2.75, true, 125]
+        // odwołanie do wybranego elementu tablicy
+
+        document.write(tab[2])
+        document.write("<br>", tab2[0])
+        document.write("<br>", mix[3])
+
+        tab2[3] = "Piotr"
+        document.write("<br>", tab2)
+
+        // wypisz ola i piort
+
+        document.write(` <br> ${tab2[0]} i ${tab2[3]}`)
+
+        // ilość elementó w tablicy
+
+        document.write(`<br> <br> Ilość elementów w tablicy mix ${mix.length}`)
+
+        // metody stosowane na tablicach
+        // metoda push
+
+        document.write("<br> <br> <br>")
+
+        // push - dodaje na  końcu 1 lub więcej elementów
+        mix.push("nowy element", 454)
+        document.write("<br>", mix)
+
+        // pop usuwa ostatni element i zwrac pozostałe
+        tab.pop();
+        document.write("<br> <br>", tab)
+
+        // join służy do łączenia
+
+        const rok = [2, 0, 2, 5];
+        const rok2 = rok.join("")
+        document.write("<br> <br>", rok2)
+
+        // sort 
+
+        document.write("<br> <br> przed sortowaniem: ", tab2)
+        tab2.sort();
+        document.write("<br> <br> tablica posortowana: ", tab2)
+
+        document.write("<br> <br> sortowanie liczb: ", tab.sort())
+        // sortowanie liczb z użyciem funkcji 
+        function porownaj(a,b){
+            return a-b;
+        }
+
+        document.write("<br> <br> posortowane funkcją", tab.sort(porownaj))
+
+        // concat
+
+        let zwierze=['kot', 'pies']
+        let zwierze2=["ryba", 'ptaszek']
+        let zwierze3=['wielorym', 'rekin']
+        let megatabela=zwierze.concat(zwierze2,zwierze3)
+        document.write("<br> <br>", megatabela)
+    </script>
+
+    <br>
+    <br>
+    <a href="wstep.html"> początek</a>
+</body>
+
+</html>
