@@ -11,7 +11,7 @@
 <body>
     <script>
         // deklaracja tablicy
-        let tab = [90, 1, 2, 78, ,1028, 589, -47, 54, -5]
+        let tab = [90, 1, 2, 78, , 1028, 589, -47, 54, -5]
         // tab z użciem array
         let tab2 = new Array('Zuzia', 'Ola', 'Iza', "Basia", 'Adam', 'Anna')
         // różne typy danych
@@ -60,19 +60,60 @@
 
         document.write("<br> <br> sortowanie liczb: ", tab.sort())
         // sortowanie liczb z użyciem funkcji 
-        function porownaj(a,b){
-            return a-b;
+        function porownaj(a, b) {
+            return a - b;
         }
 
         document.write("<br> <br> posortowane funkcją", tab.sort(porownaj))
 
         // concat
 
-        let zwierze=['kot', 'pies']
-        let zwierze2=["ryba", 'ptaszek']
-        let zwierze3=['wielorym', 'rekin']
-        let megatabela=zwierze.concat(zwierze2,zwierze3)
-        document.write("<br> <br>", megatabela)
+        let zwierze = ['kot', 'pies']
+        let zwierze2 = ["ryba", 'ptaszek']
+        let zwierze3 = ['wieloryb', 'rekin']
+        let megatabela = zwierze.concat(zwierze2, zwierze3)
+        document.write("<br> <br>", megatabela, '<br> <br>')
+
+        // pętla forEach - przejdzie przez każdy element tablicy
+
+        const liczby = [0, -5, 147, 97, 50, 96]
+        liczby.forEach((liczba) => {
+            document.write(liczba, " ")
+        })
+
+        document.write(`<br>`)
+
+        // foreach
+        const cars = ['volvo', 'bmw', 'audi', 'ford', 'dżip']
+        cars.forEach((car) => {
+            document.write(car, " ")
+        })
+
+        document.write(`<br>`)
+
+        // metoda map() przekształca tablice wyjściową w nową tablice w której każdy element jest wynikiem wywołania funkcji
+        const liczby2 = [0, 1, 2, 3, 4, 5]
+        // map ma podwoić wartości z powyższej tablicy
+        const podwoione = liczby2.map((liczba) => liczba * 2)
+        document.write("<br>", podwoione)
+        // metoda filter() słuzy do filtrowania tablicy i utworzenia nowej która zawiera tylko elementy spełniające warunek
+
+        const prices = [123, 55.99, 34.29, 77.59, 145.50, 89, 230, 165]
+
+        // chce zwrócić wartości tylko większe od 100
+
+        const morethan100 = prices.filter((price) => price > 100)
+        document.write("<br>", morethan100)
+        document.write("<br>")
+
+
+
+        const cars2 = ['volvo', 'bmw', 'audi', 'ford', 'dżip']
+        let ilosc = cars2.length //teraz ma wartość 7
+        for (let i=0; i < ilosc; i++){
+            document.write("<li>", cars2[i], "</li>")
+        }
+
     </script>
 
     <br>
