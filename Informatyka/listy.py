@@ -40,4 +40,45 @@ print(pauza)
 lista.pop()
 print(lista)
 
+# usuwanie elementu ze wskazanego indexu
 
+lista.pop(5)
+print(lista)
+
+# usuwanie elementu po nazwie pierwszą na którą trafi
+
+lista.remove("Ewa")
+print(lista)
+
+# usuwa ze wskazanego indexu --> del
+
+del lista[0]
+print(lista)
+print(pauza)
+# sortowanie listy
+print("Sortowanie")
+lista.sort()
+print(lista)
+# odwrócenie listy
+lista.reverse()
+print(lista)
+
+# sprawdza czy element jest na liście (pokaże numer indexu)
+
+# lista.index("Filip")
+print(lista.index("Filip"))
+
+# zlicza ilość wystąpień danego elementu
+
+print(lista.count("Pola"))
+
+# łączenie dwóch list
+
+lista2=[12,15,0]
+lista.extend(lista2)
+print(lista)
+
+# można również połączyć za pomocą +
+
+# razem=lista+lista2
+# print(razem)
