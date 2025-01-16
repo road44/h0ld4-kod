@@ -82,3 +82,8 @@ print(lista)
 
 # razem=lista+lista2
 # print(razem)
+
+# czyszczenie listy
+
+lista2.clear()
+print(lista2)
