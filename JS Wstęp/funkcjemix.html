@@ -57,7 +57,7 @@
                 document.write(`pole figury wynosi ${pole}`)
             }
             else {
-                document.write("Twoja figura to prostokąt")
+                document.write("Twoja figura to prostokąt <br> ")
                 document.write(`pole figury wynosi ${pole}`)
             }
         }
@@ -67,13 +67,17 @@
 
         // nfn robi szablon funkcji ⬆️⬆️ 
 
+        document.write('<br>')
 
+        let fahr = prompt("Podaj temperaturę w spotiach faranhajta")
 
-
+        const naCel = (fahr) => {
+            let obliczC = (5 / 9) * (fahr - 32)
+            document.write(`${fahr} °F to ${obliczC.toFixed(2)} °C`)
+        }
+        naCel(fahr)
     </script>
-    <!-- <br> -->
-    <br> <br>
-    <a href="wstep.html">wstep</a>
+    
 </body>
 
 </html>
