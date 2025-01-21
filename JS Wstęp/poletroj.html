@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pole trójkąta równobocznego</title>
+    <link rel="stylesheet" href="grzyb.css">
+</head>
+
+<body>
+    <script>
+        // let a = prompt("Podaj długość boku trójkąta równobocznego")
+        // let h = prompt("Podaj wysokość trójkąta równobocznego")
+        // const poleTrojkata = (a, h) => {
+        //     let pole = (a * h) / 2
+        //     document.write(`Pole trójkąta wynosi ${pole}`)
+        // }
+        // poleTrojkata(a, h)
+
+        let a = prompt(`Podaj bok trójkąta równobocznego`)
+        const wys = (a) => {
+            return (a * Math.sqrt(3)) / 2;
+
+        }
+
+        let h = wys(a)
+
+
+        const poleTroj = (a, h) => {
+            let pole = (a * h) / 2
+            document.write(`Pole trójkąta wynosi ${pole.toFixed(0)}`)
+
+        }
+
+        poleTroj(a, h)
+    </script>
+    <br>
+    <a href="wstep.html">wstep</a>
+</body>
+
+</html>
