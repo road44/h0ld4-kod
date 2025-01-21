@@ -110,9 +110,20 @@
 
         const cars2 = ['volvo', 'bmw', 'audi', 'ford', 'dżip']
         let ilosc = cars2.length //teraz ma wartość 7
-        for (let i=0; i < ilosc; i++){
+        for (let i = 0; i < ilosc; i++) {
             document.write("<li>", cars2[i], "</li>")
         }
+
+        document.write('<br>')
+        let tomek = [198, 1897, 986, 1924]
+
+        let tomek1 = tomek.unshift()
+        document.write(tomek1)
+        // ostatnią wartość ostatniego lementu
+
+        let tomek2 = tomek.shift()
+        document.write("<br>", tomek2)
+        // wyświetla pierwszą rzecz w tablicy
 
     </script>
 
