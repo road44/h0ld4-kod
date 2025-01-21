@@ -14,44 +14,64 @@
 
         // let godz = prompt("Ile godzin sypiasz?")
 
-        function czasSnu(godz) {
-            if (godz >= 7) {
-                document.write("odpowiedznia ilość snu")
-            }
-            else {
-                document.write("Za mało snu")
-            }
-        }
+        // function czasSnu(godz) {
+        //     if (godz >= 7) {
+        //         document.write("odpowiedznia ilość snu")
+        //     }
+        //     else {
+        //         document.write("Za mało snu")
+        //     }
+        // }
 
         // czasSnu(godz)
 
 
-        document.write('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx <br>')
+        // document.write('<br> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx <br>')
 
-        // ćwiczenie 2
+        // // ćwiczenie 2
 
-        let absoulute = prompt("podaj liczbe z której obliczmy wartość bezwzględną")
+        // let absoulute = prompt("podaj liczbe z której obliczmy wartość bezwzględną")
 
-        function bezwgl(absoulute) {
-            if (absoulute > 0) {
-                return absoulute
-            }
-            else {
-                return absoulute * (-1)
-            }
-        }
+        // function bezwgl(absoulute) {
+        //     if (absoulute > 0) {
+        //         return absoulute
+        //     }
+        //     else {
+        //         return absoulute * (-1)
+        //     }
+        // }
 
-        document.write(bezwgl(absoulute))
+        // document.write(bezwgl(absoulute))
 
 
         document.write('<br>xxxxxxxxxxxxxxxxx <br> <br>')
+        let szer = prompt("podaj szerokość figury")
+        let dlug = prompt("podaj długość figury")
+
+
+
         const polefigury = (szer, dlug) => {
             let pole = szer * dlug
+            if (szer == dlug) {
+                document.write('Twoja figura jest kwadratem <br>')
+                document.write(`pole figury wynosi ${pole}`)
+            }
+            else {
+                document.write("Twoja figura to prostokąt")
+                document.write(`pole figury wynosi ${pole}`)
+            }
         }
 
-        // kończymy w styczniu
+        polefigury(szer, dlug)
+
+
+        // nfn robi szablon funkcji ⬆️⬆️ 
+
+
+
+
     </script>
-    <br>
+    <!-- <br> -->
     <br> <br>
     <a href="wstep.html">wstep</a>
 </body>
