@@ -1,18 +1,36 @@
-a{
-    color: blue;
-    text-decoration: none;
-    background-color: rgb(60, 255, 0);
-    font-size: 25px;
+a {
+	color: blue;
+	text-decoration: none;
+	background-color: rgb(60, 255, 0);
+	font-size: 25px;
+	/* animation: moje 2s infinite; */
 }
 
-a:hover{
-    /* border: 5px dotted cyan; */
-    color: white;
-    background-color: black;
-    font-size: 50px;
-
+a:hover {
+	/* border: 5px dotted cyan; */
+	color: white;
+	background-color: black;
+	/* font-size: 50px; */
+	/* animation: moje 2s infinite; */
+}
+p{
+    animation: moje 2s infinite;
+    width: 50px;
+    height: 25px;
+}
+body {
+	background-color: grey;
 }
 
-body{
-    background-color: grey;
+@keyframes moje {
+	from {
+		transform: rotate(0deg) scale(1);
+	}
+	50% {
+		transform: rotate(360deg) scale(2);
+		border: 4px solid cyan;
+	}
+	to {
+		transform: rotate(0deg) scale(1);
+	}
 }

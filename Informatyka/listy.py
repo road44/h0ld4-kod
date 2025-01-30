@@ -23,7 +23,7 @@ lista[2]="Filip"
 print(lista)
 
 print(pauza)
-
+# print('ahmed')
 lista.append(113)
 print(lista)
 
