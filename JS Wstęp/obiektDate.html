@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        data = new Date();
+        // dzień miesiąca
+        document.write(data.getDate())
+        document.write("<br>")
+        // numer dnia tygodnia. niedziela = 0
+        document.write(data.getDay())
+        document.write("<br>")
+        // numer miesiąca. styczeń = 0
+        document.write(data.getMonth())
+        document.write("<br>")
+        // rok
+        // document.write(data.getYear())
+        // document.write("<br>")
+        // pełny eok
+        document.write(data.getFullYear())
+        document.write("<br>")
+        // godziny
+        document.write(data.getHours())
+        document.write("<br>")
+        // minuty
+        document.write(data.getMinutes())
+        document.write("<br>")
+        // sekundy
+        document.write(data.getSeconds())
+        document.write("<br>")
+        // data w formacie czasu GMT
+        document.write(data.toGMTString())
+        document.write("<br>")
+        // postać lokalna
+        document.write(data.toLocaleString())
+        document.write("<br>")
+        // czas w postaci lokalnej
+        document.write(data.toLocaleTimeString())
+        document.write("<br>")
+
+        let rok = data.getFullYear()
+        let mies = data.getMonth() + 1
+        let dz = data.getDate()
+        document.write(`dzisiaj jest ${rok}-0${mies}-0${dz}`)
+    </script>
+</body>
+
+</html>

@@ -13,10 +13,10 @@ a:hover {
 	/* font-size: 50px; */
 	/* animation: moje 2s infinite; */
 }
-p{
-    animation: moje 2s infinite;
-    width: 50px;
-    height: 25px;
+p {
+	animation: moje 2s infinite;
+	width: 50px;
+	height: 25px;
 }
 body {
 	background-color: grey;
