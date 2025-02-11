@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>czas i data</title>
 </head>
 
 <body>
     <script>
         data = new Date();
+        let pauza ="-----------------------------------------"
         // dzień miesiąca
         document.write(data.getDate())
         document.write("<br>")
@@ -43,12 +44,44 @@
         // czas w postaci lokalnej
         document.write(data.toLocaleTimeString())
         document.write("<br>")
+        document.write(pauza, "<br>")
+        let rok = data.getFullYear();
+        let mies = data.getMonth() + 1;
+        // let mies = 11;
+        let dz = data.getDate();
+        // let dz=10;
 
-        let rok = data.getFullYear()
-        let mies = data.getMonth() + 1
-        let dz = data.getDate()
-        document.write(`dzisiaj jest ${rok}-0${mies}-0${dz}`)
+        if (mies < 10) {
+            mies = "0" + mies
+        }
+        if (dz < 10) {
+            dz = "0" + dz
+        }
+
+
+
+        document.write(`dzisiaj jest ${dz}-${mies}-${rok} <br>`)
+        document.write(data.toLocaleDateString(), "<br>")
+
+
+        // aktualny czas
+        let godz = data.getHours();
+        let min = data.getMinutes();
+
+
+        if (min < 10) {
+            min = "0" + min
+        }
+        if (godz < 10) {
+            godz = "0" + godz
+        }
+        document.write(`aktualna godzina to ${godz}:${min} <br>`)
+        document.write(data.toLocaleTimeString(),"<br>")
+        document.write(pauza, "<br>")
+
+
     </script>
+    <a href="wstep.html">wstep</a>
 </body>
 
 </html>
