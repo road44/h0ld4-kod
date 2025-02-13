@@ -10,7 +10,11 @@
 <body>
     <script>
         data = new Date();
-        let pauza ="-----------------------------------------"
+
+
+
+
+        let pauza = "-----------------------------------------"
         // dzień miesiąca
         document.write(data.getDate())
         document.write("<br>")
@@ -69,6 +73,11 @@
         let min = data.getMinutes();
 
 
+        let dni = ['niedziela', 'poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek', 'sobota']
+
+        document.write(`dziś jest ${dni[data.getDay()]}, ${data.toLocaleDateString()} <br>`)
+
+
         if (min < 10) {
             min = "0" + min
         }
@@ -76,9 +85,11 @@
             godz = "0" + godz
         }
         document.write(`aktualna godzina to ${godz}:${min} <br>`)
-        document.write(data.toLocaleTimeString(),"<br>")
+        document.write(data.toLocaleTimeString(), "<br>")
         document.write(pauza, "<br>")
 
+        let miesna = ['stycznia', 'lutego', 'marca']
+        document.write(`dzisiaj jest ${dni[data.getDay()]}, ${dz} ${miesna[data.getMonth()]} ${rok} <br>`)
 
     </script>
     <a href="wstep.html">wstep</a>
