@@ -21,4 +21,3 @@ for i in range(10):
         else:
             print(f"Ilość punktów {poprawne} Kaplica")
         break;
-
