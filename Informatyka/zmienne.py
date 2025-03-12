@@ -23,6 +23,7 @@ print(imie,nazw)
 # znak + łączy teksty (stringi) tzw konkatenacja
 print(imie+nazw)
 
+
 print("Nazywam się "+imie,nazw)
 
 # type() sprawdza typ zmiennej (typ danych)
