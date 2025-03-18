@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onmousedown</title>
+</head>
+
+<body>
+    <p id="aaa" onmousedown="mousedown()" onmouseup="mouseup()">jeżeli przytrzymasz myszą dany tekst kolor zmieni się na
+        czerwony a kiedy puścisz kolor stanie się zielony</p>
+    <br><br>
+    <p id="xxx" onmousedown="mousedown()" onmouseup="mouseup()"> w tym akapicie tekst się nie zmieni bo zdarzenia
+        działają tylko nap ierwszy akapit z id="aaa"</p>
+    <script>
+        function mousedown(){
+            document.getElementById("aaa").style.color = "red";
+        }
+        function mouseup(){
+            document.getElementById("aaa").style.color = "green";
+        }
+    </script>
+    <a href="../wstep.html">wstep</a>
+</body>
+
+</html>

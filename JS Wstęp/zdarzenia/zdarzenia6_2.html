@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zdarnia 6 _2</title>
+</head>
+
+<body>
+    <h1>zdarzenie związane z klawiaturą przechwytywanie zdarzeń, kliknięcie klawiszy</h1>
+    <script>
+        // wykorzstanie kodu ascii
+        // jeśli klik.spacje lub enter pojawi się info że ten klawisz nacisnięto
+        document.onkeydown = function info(x) {
+
+            if (x.keyCode == 32) {
+                alert("wciśnęto klawiszz spacja")
+            }
+            else {
+                alert("Wciśnięto jakiś klaiwsz")
+            }
+        }
+    </script>
+    <a href="../wstep.html">wstep</a>
+
+</body>
+
+</html>

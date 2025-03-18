@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zdarzenie onclik</title>
+</head>
+
+<body>
+    <h1>zdarzenie onclick</h1>
+
+    <p>funkcja się uruchamia kiedy naciniemy na element na którym zastosujemy onclick np. button</p> <br>
+    <button onclick="mojafunkcja1()">weź mnie kliknij</button> <br>
+    <p id="klasa"></p>
+
+    <script>
+        function mojafunkcja1() {
+            document.getElementById("klasa").innerHTML = "kliknięto";
+        }
+    </script>
+    <br><a href="../wstep.html">wstep</a>
+</body>
+
+</html>
