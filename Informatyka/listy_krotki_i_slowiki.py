@@ -51,3 +51,7 @@ uczen["imię"]="tobiasz"
 print(uczen)
 # zwracam wartości tylko ze słownika
 print(uczen.values())
+# zwracam tylko klucze
+print(uczen.keys())
+# zwracam pary klucz-wartośc
+print(uczen.items())
