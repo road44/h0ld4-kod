@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sklep</title>
+    <!-- <link rel="stylesheet" href="../grzyb.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="zdjecia/Dirty_Workz.jpeg" type="image/x-icon">
+    
+</head>
+
+<body onload="zegar()">
+
+    <header>
+        <img src="zdjecia/Dirty_Workz.jpeg" alt="logo" width="75px" />
+        <h1 class="nazwa">Ubrania</h1>
+    </header> <br>
+
+
+    <main>
+        <table>
+            <thead>
+                <th>bluzy</th>
+                <th>koszulki</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="zdjecia/rebelion/final_dose_hoodie_tyl.webp" onmouseover="rebelion1()"
+                            onmouseout="rebelion2()" id="rebelion1"> </td>
+                    <td><img src="zdjecia/rebelion/the-final-dose-t-shirt-tyl.webp" id="rebelion2"
+                            onmouseover="rebelion3()" onmouseout="rebelion4()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="zdjecia/sub zero procjekt/szp_bluza_tyl.webp" id="szp2" onmouseout="szp3()"
+                            onmouseover="szp4()">
+                    </td>
+                    <td>
+                        <img src="zdjecia/sub zero procjekt/sub-zero-project-robot-chrome-t-shirt-tyl.webp" id="szp1"
+                            onmouseout="szp1()" onmouseover="szp2()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="zdjecia/jh/jh_tyl.webp" id="jh1" onmouseover="jh1()" onmouseout="jh2()">
+                    </td>
+                    <td>
+                        <img src="zdjecia/jh/jn_tyl.webp" id="jn1" onmouseover="jn1()" onmouseout="jn2()">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main> <br>
+
+
+
+
+
+
+    <footer class="stopka">
+        aktualna godzina:
+        <div id="czas">
+            <script src="zegar.js"></script>
+        </div>
+    </footer>
+
+</body>
+
+</html>
