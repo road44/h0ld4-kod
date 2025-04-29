@@ -2,7 +2,7 @@
 	float: right;
 	font-family: "comic sans ms";
 	font-size: 20px;
-	background-color: lime;
+	/* background-color: lime; */
 }
 
 .stopka {
@@ -10,7 +10,8 @@
 	border: 1px solid black;
 	background-color: antiquewhite;
 	border-radius: 8px;
-	/* text-align: center; */
+	/* padding: 5px; */
+	text-align: center;
 }
 
 .bluzy-tekst,
@@ -19,7 +20,7 @@
 }
 
 table img {
-	width: 500px;
+	width: 300px;
 	border-radius: 10px;
 }
 
@@ -35,9 +36,9 @@ table {
 	margin: 0 auto;
 	text-align: center;
 	background-color: lavenderblush;
+	border-radius: 10px;
 }
 
 body {
 	background-color: rgb(200, 200, 225);
 }
-
