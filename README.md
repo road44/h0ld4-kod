@@ -4,7 +4,17 @@
 
 ### Przykładowe pliki
 
-- formatowanie tekstu
-- listy
+- `formatowanie_tekstu.py`
+- `listy.py`
+- `tabliczka.py`
+- `zmienne.py`
+- `petle.py`
 
 ## Programowanie aplikacji - JavaScript
+
+### Przykładowe pliki
+
+- `wstep.html`
+- `location.html`
+- `poletroj.html`
+- `obiektDate.html`
