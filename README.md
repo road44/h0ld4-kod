@@ -18,3 +18,7 @@
 - `location.html`
 - `poletroj.html`
 - `obiektDate.html`
+
+## Strona z JS
+
+[Kliknij Tutaj](https://road44.github.io/szkolny-js/wstep.html)
