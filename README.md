@@ -21,4 +21,4 @@
 
 ## Strona z JS
 
-[Kliknij Tutaj] (https://road44.github.io/szkolny-js/wstep.html)
+[Kliknij Tutaj](https://road44.github.io/szkolny-js/wstep.html)
