@@ -18,3 +18,5 @@
 - `location.html`
 - `poletroj.html`
 - `obiektDate.html`
+
+## Strona z JS
