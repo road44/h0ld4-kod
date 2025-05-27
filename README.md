@@ -21,4 +21,4 @@
 
 ## Strona z JS
 
-see documentation [here](myLib/README.md)
+`[Kliknij Tutaj]`(https://road44.github.io/szkolny-js/wstep.html)
