@@ -20,3 +20,5 @@
 - `obiektDate.html`
 
 ## Strona z JS
+
+see documentation [here](myLib/README.md)
