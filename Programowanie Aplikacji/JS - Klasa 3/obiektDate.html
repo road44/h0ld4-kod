@@ -49,6 +49,7 @@
         document.write(data.toLocaleTimeString())
         document.write("<br>")
         document.write(pauza, "<br>")
+
         let rok = data.getFullYear();
         let mies = data.getMonth() + 1;
         // let mies = 11;
@@ -62,20 +63,17 @@
             dz = "0" + dz
         }
 
-
-
         document.write(`dzisiaj jest ${dz}-${mies}-${rok} <br>`)
         document.write(data.toLocaleDateString(), "<br>")
+
+        let dni = ['niedziela', 'poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek', 'sobota']
+
+        document.write(`dziś jest ${dni[data.getDay()]}, ${data.toLocaleDateString()} <br>`)
 
 
         // aktualny czas
         let godz = data.getHours();
         let min = data.getMinutes();
-
-
-        let dni = ['niedziela', 'poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek', 'sobota']
-
-        document.write(`dziś jest ${dni[data.getDay()]}, ${data.toLocaleDateString()} <br>`)
 
 
         if (min < 10) {
@@ -88,7 +86,7 @@
         document.write(data.toLocaleTimeString(), "<br>")
         document.write(pauza, "<br>")
 
-        let miesna = ['stycznia', 'lutego', 'marca']
+        let miesna = ['stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca']
         document.write(`dzisiaj jest ${dni[data.getDay()]}, ${dz} ${miesna[data.getMonth()]} ${rok} <br>`)
 
     </script>
