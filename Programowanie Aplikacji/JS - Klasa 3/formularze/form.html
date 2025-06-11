@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularz</title>
+</head>
+<!-- to jest zadanie na 5 XD -->
+<body>
+    <form>
+        <span>imie:</span><br>
+        <input type="text" name="imie"><br>
+        <span>nazwisko:</span><br>
+        <input type="text" name="nazwisko"> <br>
+        <span>płeć</span> <br>
+        <input checked type="radio" name="plec"> mężczyzna <br>
+        <input type="radio" name="plec"> kobieta <br>
+        <span>Adres:</span><br>
+        <input type="text" name="adres" placeholder="podaj pełny adres"> <br>
+        <span>data ur</span><br>
+        <input type="date" name="urodzenie"> <br>
+        <span>hasło:</span><br>
+        <input type="password" name="haslo" placeholder="wielkie i małe litery i cyfry"> <br> <br>
+
+        <span>jakimi kurasmi/szkoleniami jest Pan/i zainsteresowany/a</span> <br>
+
+        <select name="wybor" multiple size="5">
+            <option value="grafika komputerowa">grafika komputerowa</option>
+            <option value="prog">programowanie</option>
+            <option value="sici">sieci komputerowe</option>
+            <option value="bhp">bhp</option>
+            <option value="rach">rachunkowość</option>
+            <option value="xxx">xxx</option>
+            <option value="xxx">xxx</option>
+            <option value="xxx">xxx</option>
+        </select> <br> <br>
+        <hr>
+        <span>z ilu kursów chciabyś skorzystać</span> <br>
+        <input type="number" name="kursy-ilosc" min="0" style="width: 50px;"> <br>
+        <span>ile dni w tygodniu możesz poświęcić na nauke</span> <br>
+        <input type="range" min="1" max="7" name="dni-tygodnia" value="3" step="1"> <br>
+        <span>ulubiony kolor</span> <br>
+        <input type="color" name="kolor" value="#00ffff"> <br>
+        <span>wybierz zdjecia</span> <br>
+        <input type="file" name="zdjecie"> <br>
+        <span>wyrażam zgode na przetwarzanie moich danych</span> <br>
+        <input type="checkbox" name="zgoda" checked> <br>
+        <span>zapoznałem się z regulaminem</span> <br>
+        <input type="checkbox" name="regulamin" > tak
+        <br><br>
+        <button type="reset">wyczyść</button>
+        <button type="submit">wyślij</button>
+    </form>
+</body>
+
+</html>

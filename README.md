@@ -19,6 +19,6 @@
 - `poletroj.html`
 - `obiektDate.html`
 
-## Strona z JS - *Klasa 3*
+## Strona z JS - _Klasa 3_
 
 [Kliknij Tutaj](https://road44.github.io/szkolny-js/wstep.html)
