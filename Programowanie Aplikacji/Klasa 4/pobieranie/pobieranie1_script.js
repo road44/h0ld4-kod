@@ -10,5 +10,13 @@ console.log(test3);
 
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 // querySelector()- odwołanie do pierwszego napotkanego elementu
+// odwołanie do elementu z id
+let test4 = document.querySelector("#cos");
+console.log(test4);
 
+// odwołanie do h2
+
+let test5 = document.querySelector("ul");
+console.log(test5);
 // querySelectorAll()- odwołanie do wszystkich elementów
+
