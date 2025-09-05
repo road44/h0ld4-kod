@@ -11,4 +11,4 @@ console.log(test3);
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 // querySelector()- odwołanie do pierwszego napotkanego elementu
 
-// querySelectorAll()- odwołanie do wszystkich napotkanych elementów (kolekcja nodelist)
+// querySelectorAll()- odwołanie do wszystkich elementów
