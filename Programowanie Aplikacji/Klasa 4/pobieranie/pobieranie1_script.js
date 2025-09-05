@@ -5,3 +5,10 @@ console.log(test1);
 let test2 = document.getElementsByTagName("li");
 console.log(test2);
 // getElementsByClassName()- odwołanie do klasy
+let test3 = document.getElementsByClassName("test");
+console.log(test3);
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// querySelector()- odwołanie do pierwszego napotkanego elementu
+
+// querySelectorAll()- odwołanie do wszystkich napotkanych elementów (kolekcja nodelist)
