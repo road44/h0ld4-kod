@@ -16,11 +16,17 @@ console.log(test4);
 
 // odwołanie do h2
 
-let test5 = document.querySelector("ul");
-console.log(test5);
+let UlList = document.querySelector("ul");
+console.log(UlList);
 // querySelectorAll()- odwołanie do wszystkich elementów
 
 let test6 = document.querySelectorAll("li");
 console.log(test6);
 
 // żywe kolekcje - dynamiczne dodwanie elementów na stronie z poziomu JS
+
+// tworze nowe li
+let newLi = document.createElement("li");
+//  + newLi do UlListy
+UlList.appendChild(newLi).textContent =
+	"ten element został dodany z poziomy skryptu JS ";
