@@ -22,3 +22,5 @@ console.log(test5);
 
 let test6 = document.querySelectorAll("li");
 console.log(test6);
+
+// żywe kolekcje - dynamiczne dodwanie elementów na stronie z poziomu JS
