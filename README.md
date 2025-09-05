@@ -22,3 +22,7 @@
 ## Strona z JS - _Klasa 3_
 
 [Kliknij Tutaj](https://road44.github.io/szkolny-js/wstep.html)
+
+## Strona z JS - _Klasa 4_
+
+_Jak mi sie zachce to dodam XD_
