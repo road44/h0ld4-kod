@@ -20,3 +20,5 @@ let test5 = document.querySelector("ul");
 console.log(test5);
 // querySelectorAll()- odwołanie do wszystkich elementów
 
+let test6 = document.querySelectorAll("li");
+console.log(test6);
