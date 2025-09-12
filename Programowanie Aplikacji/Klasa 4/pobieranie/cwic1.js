@@ -9,4 +9,6 @@ for (let i = 1; i <= 10; i++) {
 	const liItem = document.createElement("li");
 	// dopisuje nomery do li
 	liItem.textContent = i;
+	// li jest dzieckiem ul
+	ullist.appendChild(liItem);
 }
