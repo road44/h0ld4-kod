@@ -12,3 +12,6 @@ for (let i = 1; i <= 10; i++) {
 	// li jest dzieckiem ul
 	ullist.appendChild(liItem);
 }
+
+// odwołanie do ostatniego (10-tego) li
+const lastLi = ullist.querySelector("li:last-child");
