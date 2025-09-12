@@ -13,10 +13,13 @@ ulList.appendChild(liItem);
 
 const div = document.createElement("div");
 const p = document.createElement("p");
+const h2 = document.createElement("h2");
 
 // p umieszczam w divie
 
 div.appendChild(p);
+div.appendChild(h2);
+div.appendChild('czy to sie wyswietli?')
 // dodaje tekst do p
 p.textContent = "to jest akapit";
 document.body.appendChild(div);
@@ -27,6 +30,3 @@ document.body.appendChild(div);
 
 // usuwam div z zawartością
 // document.body.remove(div);
-
-const h2 = document.createElement("h2");
-
