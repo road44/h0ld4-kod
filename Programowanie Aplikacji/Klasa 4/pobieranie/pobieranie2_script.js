@@ -31,3 +31,7 @@ console.log(zm10);
 // odwołanie do foto2
 const zm11 = document.querySelector("p img");
 console.log(zm11);
+// odwołanie do pustego w zm1
+// tworze w nim span 
+const span = document.createElement("span")
+// korzystam z hierarchii i dziedziczenia
