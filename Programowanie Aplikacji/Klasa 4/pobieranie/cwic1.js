@@ -15,3 +15,7 @@ for (let i = 1; i <= 10; i++) {
 
 // odwołanie do ostatniego (10-tego) li
 const lastLi = ullist.querySelector("li:last-child");
+// dopisuje do ostatniego jakiś tekst
+lastLi.textContent = "lista dynamicznie generowana skryptem JS";
+
+lastLi.style.backgroundColor = "royalblue";
