@@ -20,3 +20,7 @@ div.appendChild(p);
 // dodaje tekst do p
 p.textContent = "to jest akapit";
 document.body.appendChild(div);
+
+// usuwanie elementów (dzieci/aborcja)
+// removeChild - dla p, który jest dzieckiem
+// div.removeChild(p);
