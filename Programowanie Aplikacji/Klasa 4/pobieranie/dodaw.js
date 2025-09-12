@@ -19,11 +19,13 @@ const h2 = document.createElement("h2");
 
 div.appendChild(p);
 div.appendChild(h2);
-div.appendChild('czy to sie wyswietli?')
+// div.append("czy to sie wyswietli?");
 // dodaje tekst do p
 p.textContent = "to jest akapit";
+h2.textContent = 'to jest nagłówek'
 document.body.appendChild(div);
 
+div.append(p, h2, "teraz tekst powinien byc widoczny");
 // usuwanie elementów (dzieci/aborcja)
 // removeChild - dla p, który jest dzieckiem
 // div.removeChild(p);
