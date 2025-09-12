@@ -9,4 +9,7 @@ document.body.appendChild(ulList);
 // dodaje text do li
 
 liItem.textContent = "to jest podpunkt listy";
-ulList.appendChild(liItem)
+ulList.appendChild(liItem);
+
+const div = document.createElement("div");
+const p = document.createElement("p");
