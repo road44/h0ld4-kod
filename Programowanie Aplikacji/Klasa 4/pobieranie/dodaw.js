@@ -13,3 +13,10 @@ ulList.appendChild(liItem);
 
 const div = document.createElement("div");
 const p = document.createElement("p");
+
+// p umieszczam w divie
+
+div.appendChild(p);
+// dodaje tekst do p
+p.textContent = "to jest akapit";
+document.body.appendChild(div);
