@@ -32,6 +32,8 @@ console.log(zm10);
 const zm11 = document.querySelector("p img");
 console.log(zm11);
 // odwołanie do pustego w zm1
-// tworze w nim span 
-const span = document.createElement("span")
-// korzystam z hierarchii i dziedziczenia
+// tworze w nim span
+const span = document.createElement("span");
+// korzystam z hierarchii i dziedziczenia i dodaje spana jako dziecko diva
+
+zm1.appendChild(span).textContent = "to jest koniec zadania";
