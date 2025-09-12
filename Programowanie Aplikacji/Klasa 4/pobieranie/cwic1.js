@@ -7,4 +7,6 @@ document.body.appendChild(ullist);
 for (let i = 1; i <= 10; i++) {
 	// tworze li
 	const liItem = document.createElement("li");
+	// dopisuje nomery do li
+	liItem.textContent = i;
 }
