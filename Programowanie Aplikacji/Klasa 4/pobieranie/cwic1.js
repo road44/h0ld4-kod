@@ -19,3 +19,5 @@ const lastLi = ullist.querySelector("li:last-child");
 lastLi.textContent = "lista dynamicznie generowana skryptem JS";
 
 lastLi.style.backgroundColor = "royalblue";
+lastLi.style.fontSize = "30px";
+lastLi.style.padding = "10px 20px";
