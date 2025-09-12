@@ -24,3 +24,9 @@ document.body.appendChild(div);
 // usuwanie elementów (dzieci/aborcja)
 // removeChild - dla p, który jest dzieckiem
 // div.removeChild(p);
+
+// usuwam div z zawartością
+// document.body.remove(div);
+
+const h2 = document.createElement("h2");
+
