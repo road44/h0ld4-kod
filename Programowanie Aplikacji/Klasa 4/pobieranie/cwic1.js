@@ -2,13 +2,9 @@
 const ullist = document.createElement("ul");
 // dodaje ul do sekcji body
 
-document.body.appendChild(ullist)
+document.body.appendChild(ullist);
 
-for(let i=1; i<=10; i++){
-// tu właśnie tworze li
-
-
-
-
-
+for (let i = 1; i <= 10; i++) {
+	// tworze li
+	const liItem = document.createElement("li");
 }
