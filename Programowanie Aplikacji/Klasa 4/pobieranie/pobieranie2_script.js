@@ -28,3 +28,6 @@ console.log(zm9);
 // odwołanie do foto
 const zm10 = document.getElementsByTagName("img");
 console.log(zm10);
+// odwołanie do foto2
+const zm11 = document.querySelector("p img");
+console.log(zm11);
