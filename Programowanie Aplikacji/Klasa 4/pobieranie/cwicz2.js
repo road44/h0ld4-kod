@@ -9,6 +9,9 @@ const fun1 = () => {
 	console.log("czesc");
 };
 
+// funckja 2 ma zmienic kolor square na czerwony
+const fun2 = () => {
+	square.style.backgroundColor = "red";
+};
 // dodanie listenerów do każdej funkcji
-
 btn1.addEventListener("click", fun1);
