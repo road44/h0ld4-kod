@@ -18,3 +18,21 @@ body {
 .p2 {
 	display: none;
 }
+.show {
+	display: block;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	margin: 40px;
+}
+button {
+	padding: 20px 40px;
+	margin: 20px;
+	background: none;
+	cursor: pointer;
+	color: #fff;
+    font-size: 18px;
+}
