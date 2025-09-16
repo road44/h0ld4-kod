@@ -10,5 +10,11 @@ body {
 	align-items: center;
 	height: 100vh;
 	color: #fff;
-    background-color: #1e1d23;
+	background-color: #1e1d23;
+	font-size: 34px;
+}
+
+.p1,
+.p2 {
+	display: none;
 }
