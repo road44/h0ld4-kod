@@ -5,4 +5,10 @@ const p1 = document.querySelector(".p1");
 const p2 = document.querySelector(".p2");
 
 //f-c 1 ma zwracac w clg wyraz 'czesc'
-const fun1 = () => {};
+const fun1 = () => {
+	console.log("czesc");
+};
+
+// dodanie listenerów do każdej funkcji
+
+btn1.addEventListener("click", fun1);
