@@ -10,13 +10,21 @@ const fun1 = () => {
 };
 
 // funckja 2 ma zmienic kolor square na czerwony
-// dodanie listenerów do każdej funkcji
 const fun2 = () => {
 	square.style.backgroundColor = "red";
 };
 const fun3 = () => {
 	square.style.backgroundColor = "blue";
 };
+
+// funckja zmieniająca widoczność tekstów w paragrafie
+const fun4 = () => {
+	
+}
+
+
+
+// dodanie listenerów do każdej funkcji
 btn1.addEventListener("click", fun1);
 square.addEventListener("mouseenter", fun2);
 square.addEventListener("mouseleave", fun3);
