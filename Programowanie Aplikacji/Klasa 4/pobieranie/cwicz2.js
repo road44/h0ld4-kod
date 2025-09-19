@@ -17,14 +17,16 @@ const fun3 = () => {
 	square.style.backgroundColor = "blue";
 };
 
-// funckja zmieniająca widoczność tekstów w paragrafie
+// funckja zmieniająca widoczność tekstów w paragrafie w zależności od stanu (toggle)
 const fun4 = () => {
-	
-}
-
-
+	p1.classList.toggle("show");
+	p2.classList.toggle("show");
+};
 
 // dodanie listenerów do każdej funkcji
 btn1.addEventListener("click", fun1);
 square.addEventListener("mouseenter", fun2);
 square.addEventListener("mouseleave", fun3);
+btn2.addEventListener("click", fun4);
+
+
