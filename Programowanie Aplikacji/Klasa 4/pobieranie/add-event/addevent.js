@@ -11,7 +11,12 @@ const moja1 = () => {
 const moja2 = () => {
 	console.log("najechano na btn2");
 };
+
+const moja3 = () => {
+	console.log("🤠");
+};
 // dodaje listenera
 
 btn1.addEventListener("click", moja1);
 btn2.addEventListener("mouseenter", moja2);
+btn3.addEventListener("dblclick", moja3);
