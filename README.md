@@ -12,7 +12,7 @@
 
 ## Programowanie aplikacji - JavaScript
 
-### Przykładowe pliki
+### Przykładowe pliki - klasa 3
 
 - `wstep.html`
 - `location.html`
