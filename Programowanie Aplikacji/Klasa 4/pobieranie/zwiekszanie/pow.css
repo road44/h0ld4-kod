@@ -32,7 +32,7 @@ button {
 	transition: color 0.3s, box-shadow 0.3s;
 }
 
-button.hover {
+button:hover {
 	color: #eb219d;
 	box-shadow: 1px 1px 1px 3px #eb219d;
 }
