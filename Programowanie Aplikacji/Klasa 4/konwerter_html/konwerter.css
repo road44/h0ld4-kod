@@ -42,4 +42,9 @@ button {
 	background: none;
 	color: #fff;
 	text-transform: uppercase;
+	transition: .3s;
+}
+button:hover {
+	background-color: #ddd;
+	color: #000;
 }
