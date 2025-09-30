@@ -14,3 +14,17 @@ let cels;
 
 // funkcja swap zmienia c ja f lub odwrotnie
 // trzbeba sprwadzić co jest w spanie one i na tej podstawie zamienić
+
+const swap = () => {
+	if (one.textContent === "°C") {
+		one.textContent = "°F";
+		two.textContent = "°C";
+	} else {
+		one.textContent = "°C";
+		two.textContent = "°F";
+	}
+};
+
+// dodajemy listenera
+
+changeBtn.addEventListener("click", swap);
