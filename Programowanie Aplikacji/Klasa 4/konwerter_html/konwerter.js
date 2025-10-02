@@ -6,7 +6,6 @@ const result = document.querySelector(".result");
 const convBtn = document.querySelector(".conv");
 const resetBtn = document.querySelector(".reset");
 const changeBtn = document.querySelector(".change");
-// t(f)=t(c)*1.8+32
 // t(c)=(t(f)-32)/1.8
 
 let fahr;
@@ -23,6 +22,13 @@ const swap = () => {
 		one.textContent = "°C";
 		two.textContent = "°F";
 	}
+};
+
+// funkcja konwertująca 1 (z c na f)
+// t(f)=t(c)*1.8+32
+const celToFahr = () => {
+	fahr = converter.value * 1.8 + 32;
+	result.textContent = `${converter.value}°C to ${fahr}°F`;
 };
 
 // dodajemy listenera
