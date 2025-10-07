@@ -58,7 +58,7 @@ const myuser = {
 myuser.car.sound();
 console.log(pauza);
 const person = {
-    nick: "bolo",
+	nick: "bolo",
 	age: 19,
 };
 person.country = "poland";
@@ -75,3 +75,37 @@ const dog = {
 };
 
 console.log(dog);
+console.log(pauza);
+
+// użycie this
+const she = {
+	info: "u mnie działa",
+	showinfo: function () {
+		console.log(this.info);
+	},
+};
+
+she.showinfo();
+console.log(pauza);
+const szkola = {
+	nazwa: "zspm",
+	typ: "technikum nr 18",
+	klasa: {
+		profil: "technik informatyk",
+		poziom: "4c",
+		showinfo: function () {
+			console.log(this.profil + " " + this.poziom);
+		},
+	},
+};
+
+szkola.klasa.showinfo();
+szkola.miejscowosc = "katowice";
+szkola["dyrektor_szkoly"] = "karol juarszczyk";
+console.log(szkola);
+console.log(pauza);
+
+// jestem uczniem <typ> chodze do klasy <poziom> w miejscowosci <miejscowosc>.
+console.log(
+	`jestem uczniem ${szkola.typ} chodze do klasy ${szkola.klasa.poziom} w miejscowosci ${szkola.miejscowosc}`
+);
