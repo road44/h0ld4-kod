@@ -56,3 +56,22 @@ const myuser = {
 };
 // odowałenie do metody
 myuser.car.sound();
+console.log(pauza);
+const person = {
+    nick: "bolo",
+	age: 19,
+};
+person.country = "poland";
+person["fav-color"] = "blue";
+console.log(person);
+
+console.log(pauza);
+const dogName = "dolar";
+const dogAge = 5;
+
+const dog = {
+	name: dogName,
+	age: dogAge,
+};
+
+console.log(dog);
