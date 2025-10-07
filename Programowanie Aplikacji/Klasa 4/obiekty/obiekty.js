@@ -35,4 +35,5 @@ const newUser = {
 
 console.log(newUser);
 console.log(newUser.car);
+console.log(newUser.car.model);
 console.log(pauza);
