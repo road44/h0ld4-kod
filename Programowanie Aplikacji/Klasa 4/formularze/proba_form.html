@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+        login: <input type="text" id="login"> <br> <br>
+        haslo: <input type="password" id="haslo"> <br> <br>
+        <input type="button" value="zaloguj" onclick="zalog()">
+
+        <script>
+
+            function zalog() {
+                let login = document.querySelector('#login').value
+                let haslo = document.querySelector('#haslo').value
+
+                let logi_wz = /^[A-Z]{1,}[a-z]{4,}[!@#$%]{1,}$/;
+                let hasl_wz = /^[a-z]{6,}[0-9]{1,}[!@#$%]{1,}$/
+
+                if (login.match(logi_wz)) {
+                    if (haslo.match(hasl_wz)) {
+                        document.write(`Login i hasło poprawne`)
+                    }
+                    else {
+                        alert(`Hasło niepoprawne`)
+                    }
+                }
+                else {
+                    alert(`login niepoprawny`)
+                }
+
+            }
+
+
+
+
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+</body>
+
+</html>
