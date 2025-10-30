@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+
+        Imię:<br>
+        <input type="text" id="Imie" /><br />
+        Nazwisko:<br>
+        <input type="text" id="Nazwisko" /><br />
+        E-mail:<br>
+        <input type="text" id="Email" /><br />
+        <button onclick="sprawdz()">Sprawdź poprawność formularza</button>
+        <input type="reset" value="wyczyść dane">
+    </form>
+    <script>
+        function sprawdz() {
+            let imie = document.getElementById("Imie").value;
+            let nazwisko = document.getElementById("Nazwisko").value;
+            let email = document.getElementById("Email").value;
+
+            let spr_i = /^[a-z]{3,}$/i.exec(imie);
+            let spr_n = /^[a-z]{3,}$/i.exec(nazwisko);
+            let spr_e = /^[a-z0-9\.-_]{3,}@[a-z0-9\.-_]{2,}\.[a-z]{2,4}$/i.exec(email);
+            //var spr_e=/^.{3,}\@.{2,}\.[a-z]{2,}$/i.exec(email);;
+            //var spr_e=/^[\w]{3,}@[\w]{2,}\.[\w]{2,}$/i.exec(email);
+
+            if (spr_i != imie) {
+                alert("Wpisz poprawne Imie");
+            }
+            else if (spr_n != nazwisko) {
+                alert("Wpisz poprawne Nazwisko");
+            }
+            else if (spr_e != email) {
+                alert("Wpisz poprawne Email");
+            }
+            else {
+                alert("Formularz poprawny");
+            }
+        }
+
+
+        //WE WZORCU ADRESU NIE WSTAWIAĆ ZNAKU PLUSA PRZED  I PRZED \.
+    </script>
+
+    <a href="../wstep.html">wstep</a>
+
+
+</body>
+
+</html>

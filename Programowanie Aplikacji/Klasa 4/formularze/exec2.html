@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>uzupełnij dane</h3>
+    <form action="">
+        nick: <br>
+        <input type="text" id="nick"> <br>
+        telefon: <br>
+        <input type="text" id="tel"> <br>
+        <input type="button" value="przeslij dane" onclick="spr()">
+
+    </form>
+    <script>
+
+        function spr() {
+            let nick = document.querySelector('#nick').value
+
+            let tel = document.querySelector('#tel').value
+            // pole nick ma składać się z conajmniej 5 liter i jedenj cyfry
+            // numer telefonu to ciąg 9 cyfr bez separatorów
+            let nickWz = /^[a-z]{5,}[0-9]{1,}$/;
+            let telWz = /^[0-9]{9}$/;
+
+
+            if (nick.match(nickWz)) {
+                if (tel.match(telWz)) {
+                    document.write(`Nick i numer telefonu jest poprawne: ${nick}, ${tel}`)
+                }
+                else {
+                    document.write(`numer telefonu jest niepoprawny`)
+                }
+            }
+            else {
+                document.write(`nick jest niepoprawny`)
+            }
+
+        }
+
+
+
+
+
+
+    </script>
+    <a href="../wstep.html">wstep</a>
+
+
+
+
+
+</body>
+
+</html>
