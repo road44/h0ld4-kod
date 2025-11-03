@@ -26,3 +26,5 @@
 ## Strona z JS - _Klasa 4_
 
 _Jak mi sie zachce to dodam XD_
+
+## Algorytmika
