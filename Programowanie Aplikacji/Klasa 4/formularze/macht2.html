@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>zgłoszenie do konkursu</h3>
+
+
+    nick:<br>
+    <input type="text" id="nick"> <br>
+    telefon:<br>
+    <input type="text" id="telefon" placeholder="000 000 000"><br>
+    płeć:<br>
+    <input type="radio" id="k" value="kobieta" name="plec">kobieta
+    <input type="radio" id="m" value="chłopak" name="plec">chłopak<br>
+    email:<br>
+    <input type="text" id="email" size="40px"><br>
+    <input type="checkbox" id="zgoda">akceptuje<br>
+    <button onclick="sprawdz()" value="wysli">wysli</button>
+    <button type="reset" value="reset">reset</button>
+
+    <script>
+        function sprawdz() {
+            let nick = document.getElementById('nick').value;
+            let telefon = document.getElementById('telefon').value;
+            let k = document.getElementById('k')
+            let m = document.getElementById('m')
+            let email = document.getElementById('email').value;
+            let zgoda = document.getElementById('zgoda')
+
+
+            let nickspr = /^[a-z]{3,}[0-9]{1,}$/i
+            let telefonspr = /^[0-9]{3}\s[0-9]{3}\s[0-9]{3}$/
+            let emailspr = /^[a-z0-9\.-_]{2,}@[a-z]{2,}\.[a-z]{2,}$/i
+
+
+            if (nick.match(nickspr)) {
+                document.write(`nick: ${nick}`)
+            }
+            else if (!nick.match(nickspr) && nick != "") {
+                documen.write("nick nie jest poprawny")
+            }
+            else {
+                document.write("podaj nick")
+            }
+
+
+
+
+
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
