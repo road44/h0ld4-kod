@@ -41,17 +41,22 @@
 
 
             if (nick.match(nickspr)) {
-                document.write(`nick: ${nick}`)
+                document.write(`nick: ${nick} <br>`)
             }
             else if (!nick.match(nickspr) && nick != "") {
-                documen.write("nick nie jest poprawny")
+                document.write("nick nie jest poprawny <br>")
             }
             else {
-                document.write("podaj nick")
+                document.write("podaj nick <br>")
             }
 
 
-
+            if (telefon.match(telefonspr)) {
+                document.write(`Twój numer telefonu to ${telefon} <br>`)
+            }
+            else {
+                document.write(`Brak/niewłaściwy numer <br>`)
+            }
 
 
 
