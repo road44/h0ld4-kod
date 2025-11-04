@@ -31,19 +31,19 @@
             let telefon = document.getElementById('telefon').value;
             let k = document.getElementById('k')
             let m = document.getElementById('m')
-            let email = document.getElementById('email').value;
+            let mail = document.getElementById('email').value;
             let zgoda = document.getElementById('zgoda')
 
 
-            let nickspr = /^[a-z]{3,}[0-9]{1,}$/i
-            let telefonspr = /^[0-9]{3}\s[0-9]{3}\s[0-9]{3}$/
-            let emailspr = /^[a-z0-9\.-_]{2,}@[a-z]{2,}\.[a-z]{2,}$/i
+            let nickWz = /^[a-z]{3,}[0-9]{1,}$/i
+            let telWz = /^[0-9]{3}\s[0-9]{3}\s[0-9]{3}$/
+            let mailWz = /^[a-z0-9\.-_]{2,}@[a-z]{2,}\.[a-z]{2,}$/i
 
 
-            if (nick.match(nickspr)) {
+            if (nick.match(nickWz)) {
                 document.write(`nick: ${nick} <br>`)
             }
-            else if (!nick.match(nickspr) && nick != "") {
+            else if (!nick.match(nickWz) && nick != "") {
                 document.write("nick nie jest poprawny <br>")
             }
             else {
@@ -51,52 +51,35 @@
             }
 
 
-            if (telefon.match(telefonspr)) {
+            if (telefon.match(telWz)) {
                 document.write(`Twój numer telefonu to ${telefon} <br>`)
             }
             else {
                 document.write(`Brak/niewłaściwy numer <br>`)
             }
 
-            if(k.checked){
+            if (k.checked) {
                 document.write(`płeć: kobieta <br>`)
             }
-            else if(m.checked){
+            else if (m.checked) {
                 document.write(`płeć: mężczyzna <br>`)
             }
-            else{
+            else {
                 document.write(`nie zaznaczono <br>`)
+            }
+
+
+            if (mail.match(mailWz)) {
+                document.write(`adres email: ${mail} <br>`)
+            }
+            else {
+                document.write(`Brak/błąd w adresie <br>`)
             }
 
 
         }
 
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
