@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>zgłoszenie do konkursu</h3>
+
+
+    nick:<br>
+    <input type="text" id="nick"> <br>
+    telefon:<br>
+    <input type="text" id="telefon" placeholder="000 000 000"><br>
+    płeć:<br>
+    <input type="radio" id="k" value="kobieta" name="plec">kobieta
+    <input type="radio" id="m" value="chłopak" name="plec">chłopak<br>
+    email:<br>
+    <input type="text" id="email" size="40px"><br>
+    <input type="checkbox" id="zgoda">akceptuje<br>
+    <button onclick="sprawdz()" value="wysli">wysli</button>
+    <button type="reset" value="reset">reset</button>
+
+    <script>
+        function sprawdz() {
+            let nick = document.getElementById('nick').value;
+            let telefon = document.getElementById('telefon').value;
+            let k = document.getElementById('k')
+            let m = document.getElementById('m')
+            let mail = document.getElementById('email').value;
+            let zgoda = document.getElementById('zgoda')
+
+
+            let nickWz = /^[a-z]{3,}[0-9]{1,}$/i
+            let telWz = /^[0-9]{3}\s[0-9]{3}\s[0-9]{3}$/
+            let mailWz = /^[a-z0-9\.-_]{2,}@[a-z]{2,}\.[a-z]{2,}$/i
+
+
+            if (nick.match(nickWz)) {
+                document.write(`nick: ${nick} <br>`)
+            }
+            else if (!nick.match(nickWz) && nick != "") {
+                document.write("nick nie jest poprawny <br>")
+            }
+            else {
+                document.write("podaj nick <br>")
+            }
+
+
+            if (telefon.match(telWz)) {
+                document.write(`Twój numer telefonu to ${telefon} <br>`)
+            }
+            else {
+                document.write(`Brak/niewłaściwy numer <br>`)
+            }
+
+            if (k.checked) {
+                document.write(`płeć: kobieta <br>`)
+            }
+            else if (m.checked) {
+                document.write(`płeć: mężczyzna <br>`)
+            }
+            else {
+                document.write(`nie zaznaczono <br>`)
+            }
+
+
+            if (mail.match(mailWz)) {
+                document.write(`adres email: ${mail} <br>`)
+            }
+            else {
+                document.write(`Brak/błąd w adresie <br>`)
+            }
+
+            if (zgoda.checked) {
+                document.write(" ")
+            }
+            else {
+                document.write(`muszisz zaakceptować zgode <br>`)
+            }
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
