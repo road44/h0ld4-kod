@@ -9,7 +9,7 @@
 
 <body>
     <form action="">
-        <input type="text" id="imie" placeholder="Podaj nick"> <br>
+        <input type="text" id="nick" placeholder="Podaj nick"> <br>
         <p>wybierz gre na dzisiaj</p>
         <input type="radio" name="got" value="Ghost Of Tsushima" id="gra">Ghost Of Tsushima <br>
         <input type="radio" name="god" value="God Of War" id="gra">God Of War <br> <br>
@@ -20,7 +20,9 @@
             <option value="dwie">2h</option>
             <option value="trzy">3h</option>
             <option value="cztery">4h</option>
-        </select>
+        </select> <br><br>
+        <button onclick="sprawdz()" value="wysli">wysli</button>
+
     </form>
     <script src="form.js"></script>
 </body>
