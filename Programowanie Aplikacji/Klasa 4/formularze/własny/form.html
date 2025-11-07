@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" id="nick" placeholder="Podaj nick"> <br>
+        <p>wybierz gre na dzisiaj</p>
+        <input type="radio" name="gra" value="Ghost Of Tsushima" id="got">Ghost Of Tsushima <br>
+        <input type="radio" name="gra" value="God Of War" id="gow">God Of War <br> <br>
+        <input type="password" name="haslo" id="haslo" placeholder="Podaj swoje hasło"> <br> <br>
+        <label for="czas">Wybierz czas gry</label> <br>
+        <select name="czas" id="czas">
+            <option value="dwie">2h</option>
+            <option value="trzy">3h</option>
+            <option value="cztery">4h</option>
+        </select> <br><br>
+        <button onclick="sprawdz()" value="wysli">wysli</button>
+
+    </form>
+    <script src="form.js"></script>
+</body>
+
+</html>
