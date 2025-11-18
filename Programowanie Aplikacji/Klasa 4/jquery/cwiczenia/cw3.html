@@ -13,16 +13,16 @@
     <button>kliknij</button>
 
     <script>
+        // kliknięcie buttona ma wywołać zmiane formatowania spana
         function kolor() {
             $('span').css({
-                color: 'green',
+                color: 'blue',
                 fontWeight: 'bold',
-                fontSize: '24',
-                backgroundColor: 'yellow'
+                fontSize: '28',
             });
         }
 
-        $('span').mouseover(kolor)
+        $('button').click(kolor)
     </script>
 </body>
 
