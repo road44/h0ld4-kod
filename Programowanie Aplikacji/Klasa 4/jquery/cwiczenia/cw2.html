@@ -13,10 +13,15 @@
 
     <script>
         function kolor() {
-            $('span').css();
+            $('span').css({
+                color: 'green',
+                fontWeight: 'bold',
+                fontSize: '24',
+                backgroundColor: 'yellow'
+            });
         }
 
-        $('span').click(kolor)
+        $('span').mouseover(kolor)
     </script>
 </body>
 
