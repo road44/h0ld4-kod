@@ -13,10 +13,20 @@
         recusandae maxime amet itaque, numquam suscipit at nisi asperiores architecto incidunt non aliquid, dignissimos
         ducimus hic facere? Assumenda temporibus nemo eaque id eius, libero ab tempore nostrum possimus sed odio in,
         dicta, blanditiis hic?</span> <br> <br>
-    <button>kliknij</button>
+    <button id="p1">ukryj</button>
+    <button id="p2">pokaz</button>
 
     <script>
+        // kliknięcie wywoła zanikanie/pokazywanie tekstu
+        function schowaj() {
+            $('span').fadeOut(3000)
+        }
+        $('#p1').click(schowaj)
 
+        function pokaz() {
+            $('span').fadeIn(3000)
+        }
+        $('#p2').click(pokaz)
     </script>
 </body>
 
