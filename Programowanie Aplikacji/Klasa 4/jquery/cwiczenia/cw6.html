@@ -17,7 +17,15 @@
     <button id="p2">pokaz</button>
 
     <script>
+        function schowaj() {
+            $('span').fadeOut('slow')
+        }
+        $('#p1').click(schowaj)
 
+        function pokaz() {
+            $('span').fadeIn('fast')
+        }
+        $('#p2').click(pokaz)
     </script>
 </body>
 
