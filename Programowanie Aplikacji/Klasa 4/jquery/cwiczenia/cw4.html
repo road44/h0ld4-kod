@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cwiczenie jquery 4</title>
+    <script src="../jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum labore non quam culpa! Nobis eum sint,
+        recusandae maxime amet itaque, numquam suscipit at nisi asperiores architecto incidunt non aliquid, dignissimos
+        ducimus hic facere? Assumenda temporibus nemo eaque id eius, libero ab tempore nostrum possimus sed odio in,
+        dicta, blanditiis hic?</span> <br> <br>
+    <button>kliknij</button>
+
+    <script>
+        // kliknięcie buttona ma wywoła zanikanie buttona
+
+        function ukryj() {
+            $('span').fadeOut(6000)
+        }
+        $('button').click(ukryj)
+    </script>
+</body>
+
+</html>
