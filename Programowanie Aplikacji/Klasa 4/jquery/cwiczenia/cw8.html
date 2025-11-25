@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cwiczenie jquery 6</title>
+    <script src="../jquery-3.7.1.min.js"></script>
+    <style>
+        #kwadrat {
+            width: 250px;
+            height: 250px;
+            background-color: lime;
+            border: 1px solid yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kwadrat"></div>
+
+    <script>
+        for (let i = 1; i <= 5; i++) {
+            $('#kwadrat').slideUp(700)
+            $('#kwadrat').slideDown(700)
+
+        }
+    </script>
+    <br> <br>
+    <a href="../../wstep.html">wstep</a>
+</body>
+
+</html>
