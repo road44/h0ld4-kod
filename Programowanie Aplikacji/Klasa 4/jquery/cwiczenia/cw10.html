@@ -17,13 +17,26 @@
 </head>
 
 <body>
-    <div id="kwadrat"></div>
-    <button id="lewo">w lewo</button>
-    <button id="stop">stop</button>
-    <button id="prawo">w prawo</button>
+    <div id="kwadrat">kwadrat</div>
 
     <script>
-        
+        $('#kwadrat').css({ backgroundColor: 'blue', color: 'white' })
+        $('#kwadrat').delay(1500).animate({
+            marginLeft: '40%',
+            width: '200px',
+            height: '200px',
+        }, 5000)
+        $('#kwadrat').delay(1000).slideUp(700)
+        $('#kwadrat').delay(500).fadeIn(800)
+        $('#kwadrat').delay(300).animate({
+            marginLeft: '88%',
+            height: '150px',
+            width: '150px',
+            borderRadius: '100px'
+
+        }, 1000)
+        $('#kwadrat').delay(1000).slideUp(700)
+
 
     </script>
     <br> <br>
