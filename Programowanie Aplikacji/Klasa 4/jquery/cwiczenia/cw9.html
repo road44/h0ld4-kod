@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cwiczenie jquery 9</title>
+    <script src="../jquery-3.7.1.min.js"></script>
+    <style>
+        #kwadrat {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border: 1px solid cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kwadrat"></div>
+    <button id="lewo">w lewo</button>
+    <button id="stop">stop</button>
+    <button id="prawo">w prawo</button>
+
+    <script>
+        function lewoF() {
+            $('#kwadrat').animate({ marginLeft: "-8%" }, 3000)
+        }
+        $('#lewo').click(lewoF)
+        function stop() {
+            $('#kwadrat').stop()
+        }
+        $('#stop').click(stop)
+        function prawo() {
+            $('#kwadrat').animate({ marginLeft: "94%" }, 3000)
+        }
+        $('#prawo').click(prawo)
+
+    </script>
+    <br> <br>
+    <a href="../../wstep.html">wstep</a>
+</body>
+
+</html>

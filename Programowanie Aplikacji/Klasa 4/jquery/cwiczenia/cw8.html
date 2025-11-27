@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cwiczenie jquery 8</title>
+    <script src="../jquery-3.7.1.min.js"></script>
+    <style>
+        #kwadrat {
+            width: 200px;
+            height: 200px;
+            background-color: lime;
+            border: 1px solid yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kwadrat">
+        
+    </div>
+    <button>kliknij</button>
+
+    <script>
+        function gora() {
+            $('#kwadrat').slideToggle(700)
+        }
+        $('button').click(gora)
+
+    </script>
+    <br> <br>
+    <a href="../../wstep.html">wstep</a>
+</body>
+
+</html>

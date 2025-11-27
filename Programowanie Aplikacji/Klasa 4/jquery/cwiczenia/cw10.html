@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cwiczenie jquery 10</title>
+    <script src="../jquery-3.7.1.min.js"></script>
+    <style>
+        #kwadrat {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border: 1px solid cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kwadrat">kwadrat</div>
+
+    <script>
+        $('#kwadrat').css({ backgroundColor: 'blue', color: 'white' })
+        $('#kwadrat').delay(1500).animate({
+            marginLeft: '40%',
+            width: '200px',
+            height: '200px',
+        }, 5000)
+        $('#kwadrat').delay(1000).slideUp(700)
+        $('#kwadrat').delay(500).fadeIn(800)
+        $('#kwadrat').delay(300).animate({
+            marginLeft: '88%',
+            height: '150px',
+            width: '150px',
+            borderRadius: '100px'
+
+        }, 1000)
+        $('#kwadrat').delay(1000).slideUp(700)
+        $('#kwadrat').delay(300).animate({
+            marginLeft: '18%'
+        }, 1000)
+        $('#kwadrat').fadeIn(200)
+        $('#kwadrat').delay(350).animate({
+            marginLeft: '40%',
+            height:'200px',
+            width: '200px',
+            borderRadius:'0px'
+        })
+        $('#kwadrat').delay(300).animate({
+            width:'150px',
+            height:'150px',
+            marginLeft: '0'
+        }, 200)
+
+    </script>
+    <br> <br>
+    <a href="../../wstep.html">wstep</a>
+</body>
+
+</html>
