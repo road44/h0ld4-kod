@@ -16,9 +16,58 @@
             <thead>
                 <th>Wykonawca</th>
                 <th>Nazwa Albumu</th>
+                <th>Okładka Albumu</th>
             </thead>
+            <tbody>
+                <tr>
+                    <td>Rebelion</td>
+                    <td>Beyond The Horizon</td>
+                    <td><img id="rbth" src="asstes/rebelion-beyond-the-horizon.webp" alt="Beyond The Horizon"
+                            width="150px" height="150px"></td>
+                </tr>
+                <tr>
+                    <td>Dr. Peacock</td>
+                    <td>Tripping with Dr. Peacock</td>
+                    <td><img id="trip" src="asstes/tripping.webp" alt="Beyond The Horizon" width="150px" height="150px">
+                    </td>
+                </tr>
+            </tbody>
         </table>
+        <script>
+            function rbth_b() {
+                $('#rbth').animate({
+                    height: '350px',
+                    width: '350px',
 
+                }, 300)
+            }
+            function rbth_s() {
+                $('#rbth').animate({
+                    height: '150px',
+                    width: '150px',
+
+                }, 300)
+            }
+            function trip_b() {
+                $('#trip').animate({
+                    height: '350px',
+                    width: '350px',
+
+                }, 300)
+            }
+            function trip_s() {
+                $('#trip').animate({
+                    height: '150px',
+                    width: '150px',
+
+                }, 300)
+            }
+            $('#rbth').mouseover(rbth_b)
+            $('#rbth').mouseout(rbth_s)
+            $('#trip').mouseover(trip_b)
+            $('#trip').mouseout(trip_s)
+
+        </script>
     </div>
 </body>
 
