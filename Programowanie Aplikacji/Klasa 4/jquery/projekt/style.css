@@ -1,5 +1,21 @@
-#witej{
-    font-size: 35px;
-    /* justify-content: center; */
-    text-align: center;
+#witej {
+	font-size: 45px;
+	/* justify-content: center; */
+	text-align: center;
+}
+#tabelka_div {
+	justify-content: center;
+	text-align: center;
+}
+#tabelka {
+	margin-left: auto;
+	margin-right: auto;
+	/* border-collapse: collapse; */
+	border: 1px solid black;
+    font-size: 25px;
+}
+td,
+th {
+	border: 1px solid black;
+	padding: 8px;
 }
