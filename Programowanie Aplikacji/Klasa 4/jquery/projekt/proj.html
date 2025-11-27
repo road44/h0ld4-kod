@@ -22,7 +22,7 @@
                 <tr>
                     <td>Rebelion</td>
                     <td>Beyond The Horizon</td>
-                    <td><img id="rbth" src="asstes/rebelion-beyond-the-horizon.webp" alt="Beyond The Horizon"
+                    <td><img id="rbth" src="asstes/reb.jpeg" alt="Beyond The Horizon"
                             width="150px" height="150px"></td>
                 </tr>
                 <tr>
@@ -30,6 +30,16 @@
                     <td>Tripping with Dr. Peacock</td>
                     <td><img id="trip" src="asstes/tripping.webp" alt="Beyond The Horizon" width="150px" height="150px">
                     </td>
+                </tr>
+                <tr>
+                    <td>Pezet</td>
+                    <td>Muzyka popularna</td>
+                    <td><img id="pezet" src="asstes/pezet_mp.jpg" alt="Muzyka popularna" width="150px" height="150px">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ran-D</td>
+                    <td>Iluminate</td>
                 </tr>
             </tbody>
         </table>
@@ -62,6 +72,22 @@
 
                 }, 300)
             }
+            function pezet_b() {
+                $('#pezet').animate({
+                    height: '350px',
+                    width: '350px',
+
+                }, 300)
+            }
+            function pezet_s() {
+                $('#pezet').animate({
+                    height: '150px',
+                    width: '150px',
+
+                }, 300)
+            }
+            $('#pezet').mouseover(pezet_b)
+            $('#pezet').mouseout(pezet_s)
             $('#rbth').mouseover(rbth_b)
             $('#rbth').mouseout(rbth_s)
             $('#trip').mouseover(trip_b)
