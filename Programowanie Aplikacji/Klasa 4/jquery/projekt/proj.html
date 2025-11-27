@@ -22,8 +22,7 @@
                 <tr>
                     <td>Rebelion</td>
                     <td>Beyond The Horizon</td>
-                    <td><img id="rbth" src="asstes/reb.jpeg" alt="Beyond The Horizon"
-                            width="150px" height="150px"></td>
+                    <td><img id="rbth" src="asstes/reb.jpeg" alt="Beyond The Horizon" width="150px" height="150px"></td>
                 </tr>
                 <tr>
                     <td>Dr. Peacock</td>
@@ -39,11 +38,22 @@
                 </tr>
                 <tr>
                     <td>Ran-D</td>
-                    <td>Iluminate</td>
+                    <td>Illuminate</td>
+                    <td><img id="rand" src="asstes/iluminate.jpg" alt="Illuminate" width="150px" height="150px"></td>
+                </tr>
+                <tr>
+                    <td>Sub Zero Project</td>
+                    <td>Contaigon</td>
+                    <td><img src="asstes/szp.jpg" alt="Contaigon" id="szp" width="150px" height="150px"></td>
                 </tr>
             </tbody>
         </table>
         <script>
+
+
+
+
+
             function rbth_b() {
                 $('#rbth').animate({
                     height: '350px',
@@ -85,7 +95,38 @@
                     width: '150px',
 
                 }, 300)
+            } function ran_b() {
+                $('#rand').animate({
+                    height: '350px',
+                    width: '350px',
+
+                }, 300)
             }
+            function ran_s() {
+                $('#rand').animate({
+                    height: '150px',
+                    width: '150px',
+
+                }, 300)
+            }
+            function szp_b() {
+                $('#szp').animate({
+                    height: '350px',
+                    width: '350px',
+
+                }, 300)
+            }
+            function szp_s() {
+                $('#szp').animate({
+                    height: '150px',
+                    width: '150px',
+
+                }, 300)
+            }
+            $('#szp').mouseover(szp_b)
+            $('#szp').mouseout(szp_s)
+            $('#rand').mouseover(ran_b)
+            $('#rand').mouseout(ran_s)
             $('#pezet').mouseover(pezet_b)
             $('#pezet').mouseout(pezet_s)
             $('#rbth').mouseover(rbth_b)
