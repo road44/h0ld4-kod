@@ -11,10 +11,7 @@ body {
 	/* margin: ; */
 }
 #vixa {
-	position: relative;
-	align-items: right;
-	padding: 0;
-	width: 50px;
+	display: none;
 }
 #tabelka_div {
 	justify-content: center;
