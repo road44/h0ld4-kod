@@ -59,7 +59,7 @@
         </table>
         <script>
 
-          
+
             $('#witej').delay(400).fadeToggle(500)
             $('#witej').delay(200).animate(
                 {
@@ -70,6 +70,20 @@
                 })
             $('#tabelka_div').delay(2000).slideToggle(500)
             $('#vixa').delay(5000).slideToggle(500)
+
+
+            function vixa() {
+                $('#vixa').animate({
+                    height: '2000px',
+                    width: '2000px',
+                    marginLeft: 'auto',
+                    marginRight: 'auto'
+                }, 700)
+                $('#tabelka_div').slideToggle(100)
+                $('#witej').fadeOut(100)
+
+            }
+            $('#vixa').click(vixa)
 
             function rbth_b() {
                 $('#rbth').animate({
