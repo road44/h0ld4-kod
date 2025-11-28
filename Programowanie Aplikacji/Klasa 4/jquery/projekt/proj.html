@@ -11,6 +11,9 @@
 
 <body>
     <h3 id="witej">Witaj w sklepie z płytami</h3>
+    <div id="vixa">
+        <img src="asstes/vixa.gif" alt="vixa" width="50px">
+    </div>
     <div id="tabelka_div">
         <table id="tabelka">
             <thead>
@@ -57,7 +60,15 @@
         <script>
 
 
+            $('#witej').fadeToggle(500)
+            $('#witej').delay(200).animate(
+                {
+                    width: '600px',
+                    fontSize: '55px'
 
+
+                })
+            $('#tabelka_div').delay(2000).slideToggle(500)
 
 
             function rbth_b() {
