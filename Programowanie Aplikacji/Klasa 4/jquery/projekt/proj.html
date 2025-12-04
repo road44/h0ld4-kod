@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projekt</title>
+    <script src="../jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h3 id="witej">Witaj w sklepie z płytami</h3>
+        <img id="vixa" src="asstes/vixa.gif" alt="vixa" width="75px">
+    </div>
+    <div id="tabelka_div">
+        <table id="tabelka">
+            <thead>
+                <th>Wykonawca</th>
+                <th>Nazwa Albumu</th>
+                <th>Okładka Albumu</th>
+                <th>Gatunek</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rebelion</td>
+                    <td>Beyond The Horizon</td>
+                    <td><img id="rbth" src="asstes/reb.jpeg" alt="Beyond The Horizon" width="150px" height="150px"></td>
+                    <td>Hardstyle</td>
+                </tr>
+                <tr>
+                    <td>Dr. Peacock</td>
+                    <td>Tripping with Dr. Peacock</td>
+                    <td><img id="trip" src="asstes/tripping.webp" alt="Beyond The Horizon" width="150px" height="150px">
+                    </td>
+                    <td>Frenchcore</td>
+                </tr>
+                <tr>
+                    <td>Pezet</td>
+                    <td>Muzyka popularna</td>
+                    <td><img id="pezet" src="asstes/pezet_mp.jpg" alt="Muzyka popularna" width="150px" height="150px">
+                    </td>
+                    <td>Rap</td>
+                </tr>
+                <tr>
+                    <td>Ran-D</td>
+                    <td>Illuminate</td>
+                    <td><img id="rand" src="asstes/iluminate.jpg" alt="Illuminate" width="150px" height="150px"></td>
+                    <td>Hardstyle</td>
+                </tr>
+                <tr>
+                    <td>Sub Zero Project</td>
+                    <td>Contaigon</td>
+                    <td><img src="asstes/szp.jpg" alt="Contaigon" id="szp" width="150px" height="150px"></td>
+                    <td>Hardstyle</td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+
+
+            $('#witej').delay(400).fadeToggle(500)
+            $('#witej').delay(200).animate(
+                {
+                    width: '600px',
+                    fontSize: '55px'
+
+
+                })
+            $('#tabelka_div').delay(2000).slideToggle(500)
+            $('#vixa').delay(5000).slideToggle(500)
+
+
+            function vixa() {
+                $('#vixa').animate({
+                    height: '2000px',
+                    width: '2000px',
+                    marginLeft: 'auto',
+                    marginRight: 'auto'
+                }, 700)
+                $('#tabelka_div').slideToggle(100)
+                $('#witej').fadeOut(100)
+
+            }
+            $('#vixa').click(vixa)
+
+            function rbth_b() {
+                $('#rbth').animate({
+                    height: '350px',
+                    width: '350px',
+
+                }, 300)
+            }
+            function rbth_s() {
+                $('#rbth').animate({
+                    height: '150px',
+                    width: '150px',
+
+                }, 300)
+            }
+            function trip_b() {
+                $('#trip').animate({
+                    height: '350px',
+                    width: '350px',
+
+                }, 300)
+            }
+            function trip_s() {
+                $('#trip').animate({
+                    height: '150px',
+                    width: '150px',
+
+                }, 300)
+            }
+            function pezet_b() {
+                $('#pezet').animate({
+                    height: '350px',
+                    width: '350px',
+
+                }, 300)
+            }
+            function pezet_s() {
+                $('#pezet').animate({
+                    height: '150px',
+                    width: '150px',
+
+                }, 300)
+            } function ran_b() {
+                $('#rand').animate({
+                    height: '350px',
+                    width: '350px',
+
+                }, 300)
+            }
+            function ran_s() {
+                $('#rand').animate({
+                    height: '150px',
+                    width: '150px',
+
+                }, 300)
+            }
+            function szp_b() {
+                $('#szp').animate({
+                    height: '350px',
+                    width: '350px',
+
+                }, 300)
+            }
+            function szp_s() {
+                $('#szp').animate({
+                    height: '150px',
+                    width: '150px',
+
+                }, 300)
+            }
+            $('#szp').mouseover(szp_b)
+            $('#szp').mouseout(szp_s)
+            $('#rand').mouseover(ran_b)
+            $('#rand').mouseout(ran_s)
+            $('#pezet').mouseover(pezet_b)
+            $('#pezet').mouseout(pezet_s)
+            $('#rbth').mouseover(rbth_b)
+            $('#rbth').mouseout(rbth_s)
+            $('#trip').mouseover(trip_b)
+            $('#trip').mouseout(trip_s)
+
+        </script>
+    </div>
+</body>
+
+</html>

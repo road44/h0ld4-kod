@@ -1,0 +1,32 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+#witej {
+	/* font-size: 45px; */
+	/* justify-content: center; */
+	text-align: center;
+	display: none;
+	/* margin: ; */
+}
+#vixa {
+	display: none;
+}
+#tabelka_div {
+	justify-content: center;
+	text-align: center;
+	display: none;
+}
+#tabelka {
+	margin-left: auto;
+	margin-right: auto;
+	/* border-collapse: collapse; */
+	border: 1px solid white;
+	font-size: 25px;
+}
+td,
+th {
+	border: 1px solid white;
+	padding: 8px;
+}
