@@ -11,7 +11,7 @@
 
 
 <br>
-<a href="zad1.php">zadanie 1</a>
+<a href="zadania_php/zad1.php">zadanie 1</a>
 
 </body>
 
