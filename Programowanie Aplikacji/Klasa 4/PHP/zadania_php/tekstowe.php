@@ -28,6 +28,11 @@ $odwrocony=strrev($txt);
 
 echo "$pauza Tekst od tyłu: $odwrocony";
 
+echo $pauza;
+
+$zastap=str_replace("PHP","nowego języka programowania", $txt); 
+
+echo "$pauza Zamieniony tekst: $zastap";
 
 ?>
 
