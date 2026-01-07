@@ -12,7 +12,8 @@
 
 <br>
 <a href="zadania_php/zad1.php">zadanie 1</a> <br>
-<a href="zadania_php/tekstowe.php">tekstowe</a>
+<a href="zadania_php/tekstowe.php">tekstowe</a> <br>
+<a href="zadania_php/funk_mat.php">Funk Mat</a>
 
 </body>
 
