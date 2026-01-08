@@ -1,6 +1,6 @@
 <?php
 
-$pauza = "<br> <br>";
+$pauza = "<br>";
 
 $a=15;
 $cos ="12";
@@ -21,7 +21,7 @@ var_dump($a);
 echo $pauza;
 var_dump($liczby); //zwraca typ i wartość
 echo $pauza;
-// echo $pauza;
+echo $pauza;
 
 if((gettype($a))==="double"){
     echo "to jest liczba rzeczywista";
@@ -41,7 +41,7 @@ echo $pauza;
 
 echo "wartość bezwzględna: $bezwzgledna2";
 echo $pauza;
-// echo $pauza;
+echo $pauza;
 
 $pierkw=sqrt(25);
 
@@ -49,7 +49,7 @@ echo "pierwiastek kwadratowy z 25 to $pierkw";
 echo $pauza;
 $potega=pow(2,5);
 
-echo "$potega";
+echo "$potega"
+echo $pauza;
 
-echo "$potega";
 ?>
