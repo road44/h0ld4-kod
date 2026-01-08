@@ -50,4 +50,6 @@ echo $pauza;
 $potega=pow(2,5);
 
 echo "$potega";
+
+echo "$potega";
 ?>
