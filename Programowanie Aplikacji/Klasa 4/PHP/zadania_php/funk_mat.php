@@ -15,7 +15,7 @@ echo is_float($b);
 echo $pauza;
 echo is_numeric($b);
 echo $pauza;
-echo isset($x); //nic nie zwraca
+echo isset($x); //nic nie zwraca (nawet 0)
 echo $pauza;
 var_dump($a);
 echo $pauza;
