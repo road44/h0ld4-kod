@@ -32,4 +32,12 @@ else{
 echo $pauza;
 
 
+$bezwzgledna1=abs($a);
+$bezwzgledna2=abs(-44);
+
+
+echo "Wartość bezwzględna z $a to $bezwzgledna1";
+echo $pauza;
+
+echo "wartość bezwzględna: $bezwzgledna2";
 ?>
