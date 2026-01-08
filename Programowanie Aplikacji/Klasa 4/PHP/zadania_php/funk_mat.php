@@ -20,6 +20,8 @@ echo $pauza;
 var_dump($a);
 echo $pauza;
 var_dump($liczby); //zwraca typ i wartość
+echo $pauza;
+
 
 
 ?>
