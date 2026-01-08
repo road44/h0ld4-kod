@@ -49,7 +49,7 @@ echo "pierwiastek kwadratowy z 25 to $pierkw";
 echo $pauza;
 $potega=pow(2,5);
 
-echo "$potega"
+echo "$potega";
 echo $pauza;
 
 ?>
