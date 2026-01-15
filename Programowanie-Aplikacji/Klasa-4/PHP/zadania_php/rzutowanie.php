@@ -1,0 +1,1 @@
+<!-- rzutowanie polega na zmianie typu danych/zmiennych -->
