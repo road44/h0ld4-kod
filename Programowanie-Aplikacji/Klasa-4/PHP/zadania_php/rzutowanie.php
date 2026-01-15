@@ -31,13 +31,25 @@ $rzut = (int)$txt;
 echo $rzut . $pauza;
 echo $pauza;
 // przykład 4
-$ciag = "123abc456";
+$ciag = "123abcd456";
 echo (int)$ciag . $pauza;
-echo (string)$ciag . $pauza;
-// przykład 5
+// echo (string)$ciag . $pauza;
+echo substr($ciag,3,4);
 echo $pauza;
+
+
+// przykład 5
 $a = 2.7579;
 settype($a, "integer");
 echo $a . $pauza;
+echo $pauza;
+
+
+
+$b=15;
+settype($b,"float");
+echo $b . $pauza;
+echo gettype($b) . $pauza;
+
 
 ?>
