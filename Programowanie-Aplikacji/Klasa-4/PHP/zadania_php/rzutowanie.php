@@ -29,5 +29,15 @@ echo $pauza;
 $txt = "Ala ma kota";
 $rzut = (int)$txt;
 echo $rzut . $pauza;
+echo $pauza;
+// przykład 4
+$ciag = "123abc456";
+echo (int)$ciag . $pauza;
+echo (string)$ciag . $pauza;
+// przykład 5
+echo $pauza;
+$a = 2.7579;
+settype($a, "integer");
+echo $a . $pauza;
 
 ?>
