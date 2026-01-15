@@ -17,12 +17,17 @@ $wynik1=(float)$x;
 $wynik2=(string)$x;
 
 echo $wynik1 . $pauza;
-// echo $pauza . $pauza;
 echo $wynik2 . $pauza;
 echo $pauza;
 echo gettype($wynik1) . $pauza;
 echo gettype($wynik2) . $pauza;
 
 echo $pauza;
+
+// przykład 3
+
+$txt = "Ala ma kota";
+$rzut = (int)$txt;
+echo $rzut . $pauza;
 
 ?>
