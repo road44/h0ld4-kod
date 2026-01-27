@@ -30,6 +30,14 @@ $w =4;
 echo 'Wartość zmiennej $x wynosi ' . $x +=3;
 echo '<br>Wartość zmiennej $y wynosi ' . $y -+2;
 echo '<br> Wartość zmiennej $z wynosi ' . $z *=2;
-echo '<br> Wartość zmiennej $w wynosi ' . $w /= 3;
+echo '<br> Wartość zmiennej $w wynosi ' . round($w /= 3, 1);
+echo $pauza;
+
+$zsp = "Zespół ";
+$szk = "Szkół ";
+$pol ="Poligraficzno-Mechanicznych";
+
+echo "Moja szkoła to " . $zsp . $szk . $pol;
+
 
 ?>
