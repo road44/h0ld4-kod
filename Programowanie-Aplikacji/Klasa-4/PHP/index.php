@@ -15,7 +15,8 @@
 <a href="zadania_php/tekstowe.php">tekstowe</a> <br>
 <a href="zadania_php/funk_mat.php">Funk Mat</a> <br>
 <a href="zadania_php/rzutowanie.php">rzutowanie</a> <br>
-<a href="zadania_php/cwiczenie.php">cwiczenie</a>
+<a href="zadania_php/cwiczenie.php">cwiczenie</a> <br>
+<a href="warunkowe.php">instrukcje warunkowe</a>
 
 
 </body>
