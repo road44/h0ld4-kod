@@ -1,6 +1,7 @@
 <?php
 // skrócona instrukcja warunkowa
 $linia = "<hr>";
+$pauza = "<br>";
 $a=-2;
 echo ($a>0) ? "Liczba jest dodatnia" : "Liczba jest ujemna";
 
@@ -34,13 +35,36 @@ echo $linia;
 $losK=rand(1,6);
 $losM=rand(1,6);
 if($losK>$losM){
-    echo "kobiety górą!!!";
+    echo "kobiety górą!!! <br>";
 }
 else if ($losK==$losM){
-    echo "remis";
+    echo "remis <br>";
 }
 else{
-    echo "chopy wygrały";
+    echo "chopy wygrały <br>";
 }
+
+echo "<br> Kobiety: $losK. Chopy: $losM";
+
 echo $linia;
+
+$a = 1.5;
+$b=15;
+echo $a===$b;
+echo $pauza;
+echo $a<>$b;
+echo $pauza;
+$a += 0.5;
+echo $a<$b ? "prawda" : "$a jest większe niż $b";
+echo $linia;
+$a+=3;
+if($a>10 && $a>$b){
+    echo "dwa warunki spełnione";
+}
+else{
+    echo "nie spełnione warnukni";
+}
+
+// sprawdzanie typu zmiennej
+
 ?>
