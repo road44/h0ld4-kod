@@ -1,4 +1,12 @@
-<?php
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
 
 $pauza = "<br>";
 $linia = "<hr>";
@@ -16,5 +24,14 @@ echo $oba;
 for ($b=100;$b>=50;$b-=5){
     echo "$b ";
 }
+echo $oba;
+$c=1;
+while($c<=6){
+    echo "Kasia ";
+    $c++;
+}
+
 
 ?>
+</body>
+</html>
