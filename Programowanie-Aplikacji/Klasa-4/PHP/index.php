@@ -16,7 +16,8 @@
 <a href="zadania_php/funk_mat.php">Funk Mat</a> <br>
 <a href="zadania_php/rzutowanie.php">rzutowanie</a> <br>
 <a href="zadania_php/cwiczenie.php">cwiczenie</a> <br>
-<a href="warunkowe.php">instrukcje warunkowe</a>
+<a href="warunkowe.php">instrukcje warunkowe</a> <br>
+<a href="petle/petla_for.php">petla for</a>
 
 
 </body>
