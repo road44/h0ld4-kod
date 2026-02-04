@@ -98,5 +98,17 @@ switch ($imie){
     default:
     echo "Witaj Agnieszka";
 }
+echo $linia;
+$pass = "Witaj2137!";
+
+if(strlen($pass)<=5){
+    echo "Za krótkie";
+}
+else if(strlen($pass)>=6 && strlen($pass)<=8){
+    echo "Średnia";
+}
+else{
+    echo "Mocne";
+}
 
 ?>
