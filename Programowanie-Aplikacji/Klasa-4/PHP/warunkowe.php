@@ -64,7 +64,39 @@ if($a>10 && $a>$b){
 else{
     echo "nie spełnione warnukni";
 }
+echo $linia . $pauza;
 
 // sprawdzanie typu zmiennej
+
+$a=15;
+
+if(is_float($a)){
+    echo "$a to wartość float";
+}
+else if(is_string($a)){
+    echo "$a to wartość string";
+}
+else if(is_integer($a)){
+    echo "$a to wartość integer";
+}
+else{
+    echo "wartość to double";
+}
+
+echo $linia . $pauza;
+$imie = "Agnieszka";
+switch ($imie){
+    case "Agnieszka":
+        echo "Witaj Agnieszka";
+        break;
+    case "Ania":
+        echo "Witaj Ania";
+        break;
+    case "Kasia":
+        echo "Witaj Kasia";
+        break;
+    default:
+    echo "Witaj Agnieszka";
+}
 
 ?>
