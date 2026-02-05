@@ -60,6 +60,19 @@ for($g=0;$g<=50;$g++){
 }
 echo $oba;
 
+// while parzyste co 2 od 50-100
+$h = 50;
+while($h<=100){
+    echo "$h ";
+    $h+=5;
+}
+echo $oba;
+
+
+
+
+
+
 ?>
 </body>
 </html>
