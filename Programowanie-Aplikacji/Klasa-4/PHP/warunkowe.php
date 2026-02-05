@@ -114,4 +114,6 @@ else{
     echo "Mocne";
 }
 
+
+echo '<hr> <a href="index.php">Index</a>'
 ?>

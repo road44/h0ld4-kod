@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>petla for</title>
+
+    <style>
+        table, td{
+            border: 1px solid black;
+            border-color: blue;
+        }
+           
+    </style>
 </head>
 <body>
     <?php
@@ -68,11 +76,16 @@ while($h<=100){
 }
 echo $oba;
 
+echo '<table>';
+
+for($j=1;$j<=10;$j++){
+    echo "<tr><td>$j</td><td>przebieg petli</td></tr>";
+}
+echo "</table>";
 
 
-
-
-
+echo $oba;
 ?>
+<a href="../index.php">index</a>
 </body>
 </html>
