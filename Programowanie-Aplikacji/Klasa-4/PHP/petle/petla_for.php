@@ -83,8 +83,17 @@ for($j=1;$j<=10;$j++){
 }
 echo "</table>";
 
+echo $oba;
+// losowanie 5 liczb z zakresu 1-50
+echo "Losowe liczby z zakresu 1-50: ";
+for($t=1;$t<=5;$t++){
+    $ran[$t]=rand(1,50);
+    echo "$ran[$t] ";
+}
+
 
 echo $oba;
+
 ?>
 <a href="../index.php">index</a>
 </body>
