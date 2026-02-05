@@ -27,7 +27,8 @@ sumowanie(12,10);
 sumowanie(5,12);
 sumowanie(-12,45);
 
-
+echo $linia;
+// przykład 3. funkcja obliczająca rabat
 ?>
 
 
