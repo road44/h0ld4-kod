@@ -45,6 +45,9 @@ else{
 }
 
 echo "<br> Kobiety: $losK. Chopy: $losM";
+echo '<script>console.log("Los kobiet '. $losK . '");</script>';
+echo '<script>console.log("Los chopów '. $losM . '");</script>';
+
 
 echo $linia;
 
@@ -111,4 +114,6 @@ else{
     echo "Mocne";
 }
 
+
+echo '<hr> <a href="index.php">Index</a>'
 ?>
