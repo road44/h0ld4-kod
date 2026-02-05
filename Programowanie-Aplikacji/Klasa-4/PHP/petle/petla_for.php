@@ -38,11 +38,28 @@ while($d<=10){
 }
 
 echo $pauza;
-$e =0;
-while($e++<=10){
+$e =-1;
+while($e++<10){
     // $e++;
     echo "$e ";
 }
+// echo "<!--test-->";
+echo $oba;
+// for parzuste -50 ver 1
+echo "Tylko parzyste: ";
+for($f=0;$f<=50;$f+=2){
+    echo "$f ";
+}
+echo $linia;
+// for parzyste 0-50 ver 2 z instrukcją wrunkową
+
+for($g=0;$g<=50;$g++){
+    if($g%2==0){
+        echo "$g ";
+    }
+}
+echo $oba;
+
 ?>
 </body>
 </html>
