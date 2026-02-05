@@ -7,5 +7,21 @@
 </head>
 <body>
     
+
+<?php
+$linia ="<hr>";
+$pauza ="<br>";
+
+function hello(){
+    echo "Witaj nieznajomy!";
+}
+hello();
+
+
+
+?>
+
+
+
 </body>
 </html>
