@@ -18,7 +18,8 @@
 <a href="zadania_php/cwiczenie.php">cwiczenie</a> <br>
 <a href="warunkowe.php">instrukcje warunkowe</a> <br>
 <a href="petle/petla_for.php">petla for</a> <br>
-<a href="funkcje.php">funkcje</a>
+<a href="funkcje.php">funkcje</a> <br>
+<a href="tablice.php">tablice</a>
 
 
 </body>
