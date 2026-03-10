@@ -72,6 +72,26 @@ print_r($osoby[2]['imie']);
 
 $capitals=array('warszawa','paryż',"rzym",'madryt',array("waszyngton",'tokio','ottawa','kair'));
 
+echo "<pre>";
+print_r($capitals);
+echo "</pre> <br>";
+// odwołanie do miasta tokio
+
+print_r($capitals[4]['1']);
+
+echo '<hr>';
+
+$matma = array(
+    'zbiory' => array('działania', 'relacje', 'przediały'),
+    'funkcje' => array('liniowa', 'kwadratowa','wymierna','potęgowa'),
+    'geometria' => array('płaska','analityczna', 'stereometria')
+);
+
+echo "<pre>";
+print_r($matma);
+echo "</pre>";
+
+
 
 
 ?>
