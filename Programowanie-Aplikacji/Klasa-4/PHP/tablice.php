@@ -38,7 +38,7 @@ foreach($imie as $im){
 }
 echo "<br>";
 //liczby
-$liczby=[-12,13,111,2,3,1,2.12,23];
+$liczby=[-12,7,0,65,43,2,7,16,-5];
 $min=min($liczby);
 $max=max($liczby);
 echo "najmniejsza wartosc: $min";
@@ -50,14 +50,19 @@ echo "<br>roznica $r ";
 echo "<br> ilosc elementow wynosi ".count($liczby);
 
 echo '<br><hr>';
+// oblicz średnią wartość z $liczby
 $ilosc = count($liczby);
 $suma =0;
 for($i=0;$i<$ilosc;$i++){
     $suma += $liczby[$i];
     
 }
-echo $suma;
+echo $suma . '<br>';
+$srednia = round(($suma / $ilosc), 2);
+echo "Średnia wartość z tablicy \$liczby wynosi $srednia";
+echo '<hr>';
 
+// tablica w tablicy
 
 
 
