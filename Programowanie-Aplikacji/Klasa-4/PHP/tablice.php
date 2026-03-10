@@ -47,4 +47,22 @@ echo "najwieksza wartosc: $max";
 //roznice
 $r=$min-$max;
 echo "<br>roznica $r ";
-echo "<br> ilosc elementow wynosi ".count($liczby);?>
+echo "<br> ilosc elementow wynosi ".count($liczby);
+
+echo '<br><hr>';
+$ilosc = count($liczby);
+$suma =0;
+for($i=0;$i<$ilosc;$i++){
+    $suma += $liczby[$i];
+    
+}
+echo $suma;
+
+
+
+
+
+
+
+
+?>
