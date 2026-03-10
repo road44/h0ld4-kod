@@ -68,7 +68,9 @@ $osoby[0]=array("imie"=>"kasia", "wiek"=>25);
 $osoby[1]=array("imie"=>"anita", "wiek"=>32);
 $osoby[2]=array("imie"=>"anna", "wiek"=>28);
 
+print_r($osoby[2]['imie']);
 
+$capitals=array('warszawa','paryż',"rzym",'madryt',array("waszyngton",'tokio','ottawa','kair'));
 
 
 
