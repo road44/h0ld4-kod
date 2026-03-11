@@ -104,6 +104,25 @@ foreach($matma as $dział=>$tytuł){
 }
 echo "<hr>";
 
+$zakupy=array('mleko'=>3.49,"chleb"=>7.50,'jabłka'=>3.99,'jogurt'=>1.84);
+foreach($zakupy as $towar => $cena){
+    echo "$towar kosztuje $cena zł. <br>";
+}
+echo "<br>";
+
+print_r(array_values($zakupy));
+echo "<br>";
+
+print_r(array_keys($zakupy));
+echo "<br>";
+
+$razem=implode(", ", array_keys($zakupy));
+echo $razem . "<br>";
+
+$cena =array_sum(array_values($zakupy));
+
+echo "łączny koszt zakópów ($razem) wynosi $cena zł";
+
 
 
 
