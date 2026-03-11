@@ -77,7 +77,7 @@ print_r($capitals);
 echo "</pre> <br>";
 // odwołanie do miasta tokio
 
-print_r($capitals[4]['1']);
+print_r($capitals[4][1]);
 
 echo '<hr>';
 
@@ -93,5 +93,21 @@ echo "</pre>";
 
 
 
+foreach($matma as $dział=>$tytuł){
+    echo $dział." ";
+}
+echo "<br> <hr>";
 
+
+foreach($matma as $dział=>$tytuł){
+    echo $tytuł[1].", ";
+}
+echo "<hr>";
+
+
+
+
+
+
+echo '<hr><a href="index.php">index</a>';
 ?>
