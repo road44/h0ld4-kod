@@ -53,10 +53,25 @@ echo implode("/", $x);
 echo "<hr>";
 
 // map dane z tablicy wyjściowej są przypisane do nowej zmiennej i na nich wykonujemy jakieś działanie - tutaj podnosimy do potęgi
-$liczby =[1,2,3,4];
+$liczby =[0,1,2,3,4];
 $potliczby=array_map(fn($liczba)=>($liczba)**2, $liczby);
+echo "<pre>";
 print_r($potliczby);
-echo "<<hr>";
+echo "</pre><hr>";
+
+
+
+
+
+
+// filter - odsciewa z tablicy te elementy których nie chcemy czyli nieparzyste
+$liczby1 = [1,2,3,4,5,6];
+$parzysteliczby = array_filter($liczby1, fn($liczba)=>$liczba%2 === 0);
+echo "<pre>";
+print_r($parzysteliczby);
+echo "</pre><hr>";
+
+
 
 
 
