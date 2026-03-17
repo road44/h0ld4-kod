@@ -33,12 +33,24 @@ array_unshift($x,'mango');
 print_r($x);
 echo "<hr>";
 
+// replace podmienia elementy pierwszej tav na elementy z drugiej
+$y=['maliny','granat','kaki'];
+print_r(array_replace($x,$y));
+echo "<hr>";
 
+// shuffle wymiesza zawartość tabeli
+shuffle($y);
+print_r($y);
+echo "<hr>";
 
+// sort
+sort($x);
+print_r($x);
+echo "<hr>";
 
-
-
-
+// implode zwraca wartość string elementów tablicy
+echo implode("/", $x);
+echo "<hr>";
 
 
 echo '<hr><a href="index.php">index</a>';
