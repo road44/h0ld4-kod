@@ -52,6 +52,18 @@ echo "<hr>";
 echo implode("/", $x);
 echo "<hr>";
 
+// map dane z tablicy wyjściowej są przypisane do nowej zmiennej i na nich wykonujemy jakieś działanie - tutaj podnosimy do potęgi
+$liczby =[1,2,3,4];
+$potliczby=array_map(fn($liczba)=>($liczba)**2, $liczby);
+print_r($potliczby);
+echo "<<hr>";
+
+
+
+
+
+
+
 
 echo '<hr><a href="index.php">index</a>';
 
