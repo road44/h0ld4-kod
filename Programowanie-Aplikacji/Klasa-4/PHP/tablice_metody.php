@@ -11,6 +11,22 @@ $x[6]="jagoda";
 print_r($x);
 echo "<hr>";
 
+array_push($x,'gruszka','jajko');
+print_r($x);
+echo "<hr>";
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
