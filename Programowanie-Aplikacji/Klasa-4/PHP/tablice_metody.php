@@ -20,12 +20,18 @@ echo "<hr>";
 // pop usuwa ostatni element
 array_pop($x);
 print_r($x);
+echo "<br>";
+
+// shift usunie pierwszy element
+array_shift($x);
+print_r($x);
+echo "<br>";
+
+
+// unshift doda element na początek
+array_unshift($x,'mango');
+print_r($x);
 echo "<hr>";
-
-
-
-
-
 
 
 
