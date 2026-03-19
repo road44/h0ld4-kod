@@ -20,7 +20,8 @@
 <a href="petle/petla_for.php">petla for</a> <br>
 <a href="funkcje.php">funkcje</a> <br>
 <a href="tablice.php">tablice</a> <br>
-<a href="tablice_metody.php">tablice metody</a>
+<a href="tablice_metody.php">tablice metody</a> <br>
+<a href="data_czas.php">data czas</a>
 
 
 </body>
