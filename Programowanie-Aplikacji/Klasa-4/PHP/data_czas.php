@@ -40,6 +40,7 @@ echo "dziś jest: ".date("l").$br;
 
 $dnipl = ["Monday"=>'poniedziałek','Tuesday'=>'wtorek','Wednesday'=>'środa', 'Thursday'=>'czwartek','Friday'=>'piątek'];
 
+echo "dziś jest: ".$dnipl[date('l')].$br;
 
 echo '<a href="index.php">Index</a>';
 ?>
