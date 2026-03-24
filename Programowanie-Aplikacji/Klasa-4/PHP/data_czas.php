@@ -51,12 +51,13 @@ echo date("H:i", $zagodz);
 // data do przodu (jutro)
 
 
+$d = date('d');
+$m = date('m');
+$y = date('Y');
 
+$d++;
 
-
-
-
-
+echo "$br jutro będzie $d/$m/$y";
 
 
 
