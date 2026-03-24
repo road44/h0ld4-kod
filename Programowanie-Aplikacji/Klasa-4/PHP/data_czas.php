@@ -57,10 +57,10 @@ $y = date('Y');
 
 $d++;
 
-echo "$br jutro będzie $d/$m/$y";
+echo "$br jutro będzie $d/$m/$y $br";
 
-
-
+// określenie daty musi być wartością typu string
+// określenia: last/next/week/month/year/-2 weeks/ +7 days
 
 
 echo '<hr><a href="index.php">Index</a>';
