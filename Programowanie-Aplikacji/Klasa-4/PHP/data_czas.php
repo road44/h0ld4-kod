@@ -40,7 +40,27 @@ echo "dziś jest: ".date("l").$br;
 
 $dnipl = ["Monday"=>'poniedziałek','Tuesday'=>'wtorek','Wednesday'=>'środa', 'Thursday'=>'czwartek','Friday'=>'piątek'];
 
-echo "dziś jest: ".$dnipl[date('l')].$br;
+echo "dziś jest: ".$dnipl[date('l')].". ".date('d/m/Y').$br;
 
-echo '<a href="index.php">Index</a>';
+
+
+$teraz = time();
+$zagodz=$teraz +3600;
+echo "Teraz $teraz, za godzine $zagodz $br";
+echo date("H:i", $zagodz);
+// data do przodu (jutro)
+
+
+
+
+
+
+
+
+
+
+
+
+
+echo '<hr><a href="index.php">Index</a>';
 ?>
