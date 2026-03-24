@@ -7,8 +7,32 @@ $data = getdate();
 $dzien = $data["mday"];
 $miesiac=$data['mon'];
 $rok = $data['year'];
-echo "Bierząca data to: $dzien-$miesiac-$rok r.";
 
+
+if($miesiac < 10){
+    $miesiac=0 . $data['mon'];
+}
+else if($dzien < 10){
+    $dzien =0 . $data['mday'];
+}
+else if($dzien < 10 and $miesiac < 10){
+    $dzien =0 . $data['mday'];
+    $miesiac=0 . $data['mon'];
+
+}
+
+
+echo "Bierząca data to: $dzien-$miesiac-$rok r.";
+echo $br;
+
+
+echo date('Y-m-d');
+echo $br;
+echo date("d-m-Y");
+echo $br;
+echo date('G:i:s') . $br;
+echo date('H-i-s') . $br;
+echo date('Y-m-d g:i:sa').$br;
 
 
 
