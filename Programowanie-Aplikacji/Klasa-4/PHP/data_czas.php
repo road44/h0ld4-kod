@@ -32,8 +32,14 @@ echo date("d-m-Y");
 echo $br;
 echo date('G:i:s') . $br;
 echo date('H-i-s') . $br;
-echo date('Y-m-d g:i:sa').$br;
+echo date('Y-m-d g:i:sa ').$br;
+
+echo $br;
+
+echo "dziś jest: ".date("l").$br;
+
+$dnipl = ["Monday"=>'poniedziałek','Tuesday'=>'wtorek','Wednesday'=>'środa', 'Thursday'=>'czwartek','Friday'=>'piątek'];
 
 
-
+echo '<a href="index.php">Index</a>';
 ?>

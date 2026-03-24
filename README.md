@@ -25,6 +25,6 @@
 
 ## Strona z JS - _Klasa 4_
 
-**Nie będzie :>**
+**Nie ma i nie będzie :>**
 
 ## Algorytmika
