@@ -80,7 +80,7 @@ echo date('d.m.Y',$zamies)." organizujemy akadamie pożegnalną dla maturzystów
 
 $wczesniej=strtotime('4 years ago');
 echo "$br w roku ";
-echo date("Y", $wczesniej)."Chodziliśmy do SP";
+echo date("Y", $wczesniej).", chodziliśmy do SP";
 
 
 
