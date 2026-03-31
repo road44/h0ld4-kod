@@ -21,7 +21,10 @@
 <a href="funkcje.php">funkcje</a> <br>
 <a href="tablice.php">tablice</a> <br>
 <a href="tablice_metody.php">tablice metody</a> <br>
-<a href="data_czas.php">data czas</a>
+<a href="data_czas.php">data czas</a> <br>
+<a href="formularze/formular_1.html">formularze 1</a> <br>
+<a href="formularze/formular_2.html">formularze 2</a> <br>
+<a href="formularze/formular_3.html">formularze 3</a> <br>
 
 
 </body>
