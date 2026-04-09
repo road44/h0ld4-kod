@@ -9,6 +9,33 @@
 
 <body>
 
+    <form action="./form6.php" method="post">
+
+        nick: <br> <input type="text" name="nick"> <br>
+        wiek: <br> <input type="number" name="wiek"> <br>
+        <br>
+        jakimi kurwasmi jesteś zainteresowany/na? <br>
+        <input type="checkbox" name="kurs[]" value="php"> php <br>
+        <input type="checkbox" name="kurs[]" value="c++"> c++ <br>
+        <input type="checkbox" name="kurs[]" value="python"> python <br>
+        <input type="checkbox" name="kurs[]" value="java"> java <br>
+        <input type="checkbox" name="kurs[]" value="c#"> c# <br>
+        <br>
+        wybierz język <br>
+        <select name="jezyk[]" multiple>
+            <option value="angielski">angielski</option>
+            <option value="niemiecki">niemiecki</option>
+            <option value="hiszpański">hiszpański</option>
+            <option value="włoski">włoski</option>
+            <option value="ukraniński">ukraniński</option>
+        </select>
+        <br> <br>
+        <input type="submit" value="prześlij">
+        <input type="reset" value="wyczyść">
+    </form>
+
+
+
 </body>
 
 </html>
