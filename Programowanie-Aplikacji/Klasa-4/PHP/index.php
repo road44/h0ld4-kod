@@ -28,6 +28,7 @@
 <a href="formularze/form4.html">formularze 4</a> <br>
 <a href="formularze/form5.html">formularze 5</a> <br>
 <a href="formularze/form6.html">formularze 6</a> <br>
+<a href="formularze/form7.html">formularze 7</a>
 
 </body>
 
