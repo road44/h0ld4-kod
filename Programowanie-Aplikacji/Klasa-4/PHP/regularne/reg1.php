@@ -9,4 +9,6 @@ else{
     echo "Brak dopasowana";
 }
 
+echo '<hr><a href="../index.php">Index</a>'
+
 ?>
