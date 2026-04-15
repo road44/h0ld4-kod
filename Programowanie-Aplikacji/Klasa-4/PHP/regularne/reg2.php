@@ -2,7 +2,7 @@
 $dane=$_POST['dane'];
 
 
-$wz='/^[a-zA-z]{3,}\s[a-zA-Z]{2,}$/';
+$wz='/^[a-z]{3,}\s[a-z]{2,}$/i';
 
 
 if(preg_match($wz,$dane)){
