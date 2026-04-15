@@ -1,4 +1,16 @@
 <?php
+// imie i naswisko od wielkiej litery
+// mogą pojawić się polskie znaki
+
+
+
+
+
+
+
+
+
+
 
 
 echo '<hr>';
