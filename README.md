@@ -23,8 +23,8 @@
 
 [Kliknij Tutaj](https://road44.github.io/szkolny-js/wstep.html)
 
-## Strona z JS - _Klasa 4_
+## Strona z PHP - _Klasa 4_
 
-**Nie ma i nie będzie :>**
+**Może będzie :>**
 
 ## Algorytmika
