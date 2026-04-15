@@ -31,6 +31,7 @@
 <a href="formularze/form7.html">formularze 7</a> <br>
 <a href="regularne/reg1.php">Regularne 1</a> <br>
 <a href="regularne/reg2.html">Regularne 2</a> <br>
+<a href="regularne/reg3.html">Regularne 3</a> <br>
 
 </body>
 
