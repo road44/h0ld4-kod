@@ -28,7 +28,10 @@
 <a href="formularze/form4.html">formularze 4</a> <br>
 <a href="formularze/form5.html">formularze 5</a> <br>
 <a href="formularze/form6.html">formularze 6</a> <br>
-<a href="formularze/form7.html">formularze 7</a>
+<a href="formularze/form7.html">formularze 7</a> <br>
+<a href="regularne/reg1.php">Regularne 1</a> <br>
+<a href="regularne/reg2.html">Regularne 2</a> <br>
+<a href="regularne/reg3.html">Regularne 3</a> <br>
 
 </body>
 
