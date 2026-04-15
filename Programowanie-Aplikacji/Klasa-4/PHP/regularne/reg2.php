@@ -2,10 +2,15 @@
 $dane=$_POST['dane'];
 
 
-$wz = '/^[a-zA-z]{3,}\s[a-zA-Z]{2,}$/';
+$wz='/^[a-zA-z]{3,}\s[a-zA-Z]{2,}$/';
 
 
-if(preg_match($wz,$dane))
+if(preg_match($wz,$dane)){
+    echo "Poprawne dane";
+}
+else{
+    echo "Error";
+}
 
 
 echo '<hr>';
