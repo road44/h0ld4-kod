@@ -33,6 +33,7 @@
 <a href="regularne/reg2.html">Regularne 2</a> <br>
 <a href="regularne/reg3.html">Regularne 3</a> <br>
 <a href="regularne/reg4.html">Regularne 4</a> <br>
+<a href="regularne/reg5.html">Regularne 5</a> <br>
 
 </body>
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regularne 5</title>
+</head>
+
+<body>
+    <h2>FORMULARZ ZGŁOSZENIOWY</h2>
+    <form action="./reg5.php" method="post">
+
+        imie: <input type="text" name="imie"> <br> <br>
+        nazwisko: <input type="text" name="nazwisko"> <br> <br>
+        płeć: <br>
+        <input type="radio" name="plec" value="chop"> chop <br>
+        <input type="radio" name="plec" value="kobieta"> kobieta <br> <br>
+        wiek: <input type="number" name="wiek"> <br> <br>
+        województwo:
+        <select name="woj">
+            <option value="śląskie">śląskie</option>
+            <option value="małopolskie">małopolskie</option>
+            <option value="dolnośląskie">dolnośląskie</option>
+            <option value="podkarpackie">podkarpackie</option>
+            <option value="opolskie">opolskie</option>
+        </select> <br> <br>
+        numer telefonu: <input type="text" name="tel" placeholder="000-000-000"><br><br>
+        mail: <input type="text" name="mail"> <br> <br>
+        <input type="checkbox" name="zgoda"> akceptuje zgode <br> <br>
+        <input type="submit" value="wyślij">
+        <input type="reset" value="wyczyść">
+
+
+    </form>
+</body>
+
+</html>
