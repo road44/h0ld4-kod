@@ -40,6 +40,12 @@ if($_POST['wiek']<18){
 // województwo
 
 
+if(isset($_POST['woj'])){
+    foreach($)
+}
+
+
+
 
 
 echo '<hr>';
