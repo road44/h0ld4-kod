@@ -41,11 +41,45 @@ if($_POST['wiek']<18){
 
 
 if(isset($_POST['woj'])){
-    foreach($)
+    foreach($_POST['woj'] as $w){
+        echo "Województwo to: " . $w . $b;
+    }
+}
+else {
+    echo "Nie wybrano województwa $b";
+}
+
+// telefon
+
+$wzTel = '/^[0-9]{3}-[0-9]{3}-[0-9]{3}$/';
+
+if(!empty($_POST['tel'])&&preg_match($wzTel,$_POST['tel'])){
+    echo "Numer telefonu to: " . $_POST['tel'] . $b;
+}
+else if(empty($_POST['tel'])){
+    echo "Nie wpisano numeru telefonu $b";
+}
+else{
+    echo "Numer telefonu wpisany niepoprawnie $b";
+}
+
+// mail
+
+
+if(!empty($_POST['mail']) && filter_var($_POST['mail'],FILTER_VALIDATE_EMAIL)){
+    echo "Mail to: " . $_POST['mail'].$b;
+}
+else if(empty($_POST['mail'])){
+    echo "Muszisz podać maila $b";
+}
+else{
+    echo "Wprowadzono nieprawidłowy mail$b";
 }
 
 
-
+if(!isset($_POST['zgoda'])){
+    echo "<b><font color='red'>Muszisz wyrazić zgode</font></b> $b";
+}
 
 
 echo '<hr>';
