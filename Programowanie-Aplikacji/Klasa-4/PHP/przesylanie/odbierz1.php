@@ -12,4 +12,5 @@ echo $_FILES['plik1']['tmp_name'].$b;
 
 echo $_FILES['plik1']['error'].$b;
 echo "<hr>";
+echo '<a href="../index.php">Index</a>';
 ?>
