@@ -55,5 +55,5 @@ if(!isset($_POST['zgoda'])){
     echo "Zaakceptuj regulamin";
 }
 }
-echo '<hr><a href="wls.html">Powrót</a>'
+echo '<hr><a href="wls.html">Powrót</a><br><a href="../../index.php">Index</a>'
 ?>
