@@ -34,8 +34,10 @@
 <a href="regularne/reg3.html">Regularne 3</a> <br>
 <a href="regularne/reg4.html">Regularne 4</a> <br>
 <a href="regularne/reg5.html">Regularne 5</a> <br>
-<a href="zadania_php/wlasne/wls.html">formularz + regularne własne</a>
-
+<a href="zadania_php/wlasne/wls.html">formularz + regularne własne</a> <br>
+<a href="przesylanie/wyslij1.html">wysyłanie i odbieranie</a> <br>
+<a href="przesylanie/wyslij2.html">wysyłanie i odbieranie 2</a> <br>
+<a href="przesylanie/wyslij3.html">Wysyłanie 3</a>
 </body>
 
 </html>
