@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularz własne</title>
+</head>
+
+<body>
+    <form action="./wls.php" method="post">
+
+        ulubiony artysta: <input type="text" name="art"> <br><br>
+        jak długo go słuchasz (w latach): <input type="number" name="czas"> <br> <br>
+        Podaj numer telefonu: <input type="text" name="tel" placeholder="000-000-000"> <br> <br>
+        wybierz ulubione festiwale <br>
+        <select name="fest[]" multiple>
+            <option value="IMPAQT">IMPAQT</option>
+            <option value="Defqon.1">Defqon.1</option>
+            <option value="REBiRTH">REBiRTH</option>
+            <option value="Qlimax">Qlimax</option>
+            <option value="REBELLiON">REBELLiON</option>
+        </select> <br><br>
+        Czy checsz zapisac się do newslettera? <br>
+        <input type="radio" name="news" value="tak"> tak
+        <input type="radio" name="news" value="nie"> nie <br> <br>
+        <input type="checkbox" name="zgoda">Akceptuje Regulamin <br> <br>
+        <input type="submit" value="wyślij"> <input type="reset" value="wyczyść">
+    </form>
+</body>
+
+</html>
