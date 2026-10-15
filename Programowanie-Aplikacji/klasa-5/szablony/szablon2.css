@@ -46,9 +46,12 @@ header {
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 img {
-	height: 150px;
+	height: 250px;
 	padding: 5px;
 }
 footer {
