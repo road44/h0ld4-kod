@@ -3,3 +3,45 @@
 	margin: 0;
 	padding: 0;
 }
+header {
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background-color: #1b1a1a;
+	color: rgb(13, 236, 25);
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.kont {
+	display: flex;
+	flex-direction: row;
+}
+.s1 {
+	flex: 1;
+	font-size: 30px;
+	line-height: 50px;
+	padding: 10px;
+	/* width: 20px; */
+}
+.s2 {
+	flex: 2;
+	font-size: 40px;
+	padding: 20px;
+}
+.s3 {
+	flex: 1;
+	padding: 10px;
+}
+img {
+	height: 150px;
+}
+footer {
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background-color: #1b1a1a;
+	color: rgb(13, 236, 25);
+	font-size: 18px;
+}
