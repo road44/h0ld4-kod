@@ -37,10 +37,17 @@ nav {
 	margin-top: 40px;
 	margin-left: 100px;
 	font-size: 18px;
+	/* padding: 10px; */
 }
 input {
 	border-radius: 10px;
 	padding: 6px;
+	margin: 10px;
+}
+.btn {
+	background-color: rgb(13, 130, 233);
+	color: #fff;
+	width: 200px;
 }
 aside {
 	display: flex;
