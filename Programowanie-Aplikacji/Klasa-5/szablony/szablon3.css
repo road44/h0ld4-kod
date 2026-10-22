@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	background-color: rgb(4, 73, 193);
+	color: #fff;
+	font-size: 26px;
+	height: 80px;
+	text-transform: uppercase;
+	line-height: 80px;
+	text-align: center;
+	justify-content: center;
+}
+
+nav {
+	display: flex;
+	background-color: rgb(13, 130, 233);
+	color: #fff;
+	font-size: 20px;
+	height: 50px;
+	line-height: 50px;
+	text-transform: uppercase;
+	justify-content: space-around;
+	font-weight: bold;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	height: 90vh;
+	margin: 10px;
+}
+#form {
+	margin-top: 40px;
+	margin-left: 100px;
+	font-size: 18px;
+	/* padding: 10px; */
+}
+input {
+	border-radius: 10px;
+	padding: 6px;
+	margin: 10px;
+}
+.btn {
+	background-color: rgb(13, 130, 233);
+	color: #fff;
+	width: 200px;
+}
+aside {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-left: 60px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	flex: 3;
+	text-align: justify;
+	font-size: 20px;
+	line-height: 250%;
+}
+img {
+	width: 70%;
+	margin-top: 80px;
+}
+#pierwsza {
+	font-style: italic;
+}
+#druga {
+	font-weight: bold;
+}
+footer {
+	background-color: rgb(4, 73, 193);
+	color: #fff;
+	font-size: 20px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	justify-content: center;
+}
