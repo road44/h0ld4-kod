@@ -33,12 +33,17 @@ nav {
 	height: 90vh;
 	margin: 10px;
 }
+#form {
+	margin-top: 40px;
+	margin-left: 100px;
+}
 
 aside {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
 	margin-left: 60px;
+	/* align-content: center; */
 }
 
 main {
@@ -46,7 +51,25 @@ main {
 	flex-direction: column;
 	flex: 3;
 	text-align: justify;
+	font-size: 20px;
+	line-height: 250%;
 }
 img {
 	width: 66%;
+	margin-top: 80px;
+}
+#pierwsza {
+	font-style: italic;
+}
+#druga {
+	font-weight: bold;
+}
+footer {
+	background-color: rgb(4, 73, 193);
+	color: #fff;
+	font-size: 20px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	justify-content: center;
 }
