@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pow 2</title>
+    <style>
+        * {
+            background-color: black;
+            color: white;
+            font-size: 25px;
+        }
+
+        #spr {
+            background-color: white;
+            color: black;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    Podaj pierwszą liczbe: <input type="number" id="x"> <br>
+    Podaj drugą liczbe: <input type="number" id="y"> <br> <br>
+    <input type="button" value="sprawdź" id="spr" onclick="spr_liczby()">
+    <script>
+        function spr_liczby() {
+            let x = document.querySelector('#x').value
+            let y = document.getElementById('y').value
+            if ((x > 0) && (y > 0)) {
+                if ((x % 2 == 0) || (y % 2 == 0)) {
+                    document.write(`X jest dodatni, parzysty`)
+                }
+            }
+            else if ((x % 2 == 0) || (y == 0)) {
+                document.write(`Y jest 0`)
+            }
+        }
+
+        document.write('<br> <br>')
+        // 5x text 'egzamin tuż tuż...'
+        for (i = 0; i <= 5; i++) {
+            document.write(`egzamin tuż tuż... <br>`)
+        }
+        document.write('<br> <br>')
+
+        document.write(`<ul>`)
+
+        let im = ['Oliwier', 'Kuba G', 'Ryba', 'Szymon', 'Tymek', 'Filip']
+
+        let ilosc = im.length
+        console.log(`Ilość elementów w tablicy: ${ilosc}`);
+
+        im.forEach(imie => {
+            document.write(`<li>${imie} <br></li>`)
+        })
+
+        document.write(`</ul>`)
+    </script>
+</body>
+
+</html>
