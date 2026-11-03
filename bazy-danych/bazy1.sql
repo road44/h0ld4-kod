@@ -49,3 +49,17 @@ MODIFY
  alter table: change, rename column staran_nazwa nowa_nazwa,
  
  */
+CREATE TABLE kategorie(
+    id_kategorii int AUTO_INCREMENT PRIMARY KEY,
+    nazwa varchar(50) NOT NULL UNIQUE
+);
+
+ALTER TABLE
+    sprzet
+ADD
+    COLUMN id_kategorii int;
+
+ALTER TABLE
+    sprzet
+ADD
+    CONSTRAINT fk_sprzet_kategorie FOREIGN KEY (id_kategorii) REFERENCES kategorie(id_kategorii);
