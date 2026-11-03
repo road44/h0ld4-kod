@@ -1,42 +1,65 @@
 -- tworzenie bazy
-
-create database if not exists wypozyczalnia 
-character set utf8mb4;
+CREATE DATABASE IF NOT EXISTS wypozyczalnia CHARACTER SET utf8mb4;
 
 -- tworzenie tabel
-
-create table uczniowie(
-
-    id_ucznia int AUTO_INCREMENT primary key,
-    imie varchar(40) not null ,
-    nazwisko varchar(80) not null,
-    klasa varchar (10) not null,
-    email varchar(20) not null unique
-
+CREATE TABLE uczniowie(
+    id_ucznia int AUTO_INCREMENT PRIMARY KEY,
+    imie varchar(40) NOT NULL,
+    nazwisko varchar(80) NOT NULL,
+    klasa varchar (10) NOT NULL,
+    email varchar(20) NOT NULL UNIQUE
 );
 
-create table sprzet(
-    id_sprzetu int AUTO_INCREMENT primary key,
-    nazwa varchar(100) not null,
-    numer_seryjny varchar(50) not null unique,
-    cena decimal(10,2) not null check(cena >= 0),
-    dostepny boolean default true
+CREATE TABLE sprzet(
+    id_sprzetu int AUTO_INCREMENT PRIMARY KEY,
+    nazwa varchar(100) NOT NULL,
+    numer_seryjny varchar(50) NOT NULL UNIQUE,
+    cena decimal(10, 2) NOT NULL CHECK(cena >= 0),
+    dostepny boolean DEFAULT TRUE
 );
 
-create table wypozyczenia(
-    id_wypozyczenia int AUTO_INCREMENT primary key,
-    id_ucznia int not null,
-    id_sprzetu int not null,
-    data_wypozyczenia date not null,
-    planowany_zwrot date not null,
+CREATE TABLE wypozyczenia(
+    id_wypozyczenia int AUTO_INCREMENT PRIMARY KEY,
+    id_ucznia int NOT NULL,
+    id_sprzetu int NOT NULL,
+    data_wypozyczenia date NOT NULL,
+    planowany_zwrot date NOT NULL,
     prawdziwy_zwrot date,
-    CONSTRAINT fk_wypozyczenia_uczniowie
-        foreign key  (id_ucznia)
-        references uczniowie(id_ucznia)
-        on delete RESTRICT,
-
-    CONSTRAINT fk_wypozyczenia_sprzet
-        foreign key  (id_sprzetu)
-        references sprzet(id_sprzetu)
-        on delete RESTRICT
+    CONSTRAINT fk_wypozyczenia_uczniowie FOREIGN KEY (id_ucznia) REFERENCES uczniowie(id_ucznia) ON DELETE RESTRICT,
+    CONSTRAINT fk_wypozyczenia_sprzet FOREIGN KEY (id_sprzetu) REFERENCES sprzet(id_sprzetu) ON DELETE RESTRICT
 );
+
+ALTER TABLE
+    uczniowie
+ADD
+    COLUMN telefon varchar(20);
+
+ALTER TABLE
+    sprzet
+MODIFY
+    nazwa varchar(150) NOT NULL;
+
+-- komentarz jednolimiowy
+/*
+ komentarz
+ wiloliniowy
+ */
+/*
+ 
+ alter table: change, rename column staran_nazwa nowa_nazwa,
+ 
+ */
+CREATE TABLE kategorie(
+    id_kategorii int AUTO_INCREMENT PRIMARY KEY,
+    nazwa varchar(50) NOT NULL UNIQUE
+);
+
+ALTER TABLE
+    sprzet
+ADD
+    COLUMN id_kategorii int;
+
+ALTER TABLE
+    sprzet
+ADD
+    CONSTRAINT fk_sprzet_kategorie FOREIGN KEY (id_kategorii) REFERENCES kategorie(id_kategorii);
