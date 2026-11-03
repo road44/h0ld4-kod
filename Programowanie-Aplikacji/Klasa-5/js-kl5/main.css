@@ -1,0 +1,12 @@
+* {
+	background-color: black;
+	color: white;
+	font-size: 25px;
+	font-family: 'DejaVu Sans';
+}
+
+#spr {
+	background-color: white;
+	color: black;
+	border-radius: 8px;
+}

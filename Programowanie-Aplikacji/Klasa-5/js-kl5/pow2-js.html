@@ -5,19 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pow 2</title>
-    <style>
-        * {
-            background-color: black;
-            color: white;
-            font-size: 25px;
-        }
+    <link rel="stylesheet" href="main.css">
 
-        #spr {
-            background-color: white;
-            color: black;
-            border-radius: 8px;
-        }
-    </style>
 </head>
 
 <body>
@@ -29,7 +18,7 @@
     <h3>Konwerter galonów na litry</h3>
     Podaj ilość galonów: <input type="text" id="galony">
     <input type="button" value="Przelicz" onclick="przelicz()">
-
+    <p id="info"></p>
     <script>
         function spr_liczby() {
             let x = document.querySelector('#x').value
@@ -99,6 +88,12 @@
 
         //konwersja galonów na litry
         // 1 gal = 3.8 L
+
+        function przelicz() {
+            let gal = document.querySelector('#galony').value
+            let razem = (gal * 3.8).toFixed(2)
+            document.querySelector('#info').innerHTML = `${gal} to ${razem} litrów`
+        }
     </script>
 </body>
 
