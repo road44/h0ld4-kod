@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kod usera</title>
+    <!-- <style>
+        
+    </style> -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form>
+        Imię: <input type="text" id="imie"> <br> <br>
+        Nazwisko: <input type="text" id="nazwisko"> <br> <br>
+        Rok urodzenia: <input type="text" id="rok"> <br> <br>
+        <input type="button" id="gen" onclick="kod()" value="Generuj Kod">
+        <br>
+        <p id="kod"></p>
+    </form>
+
+    <script>
+        function kod() {
+            let im = document.getElementById('imie').value
+            let nz = document.getElementById('nazwisko').value
+            let rok = document.getElementById('rok').value
+
+            let im1 = im.substr(0, 1).toUpperCase()
+            let nz1 = nz.substr(0, 1).toUpperCase()
+            let r1 = rok.substr(2, 2)
+
+            document.querySelector('#kod').innerHTML = `Kod użytkownika to: ${im1}${nz1}${r1}`
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pow 2</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    Podaj pierwszą liczbe: <input type="number" id="x"> <br>
+    Podaj drugą liczbe: <input type="number" id="y"> <br> <br>
+    <input type="button" value="sprawdź" id="spr" onclick="spr_liczby()">
+    <br>
+    <br>
+    <h3>Konwerter galonów na litry</h3>
+    Podaj ilość galonów: <input type="text" id="galony">
+    <input type="button" value="Przelicz" onclick="przelicz()">
+    <p id="info"></p>
+    <script>
+        function spr_liczby() {
+            let x = document.querySelector('#x').value
+            let y = document.getElementById('y').value
+            if ((x > 0) && (y > 0)) {
+                if ((x % 2 == 0) || (y % 2 == 0)) {
+                    document.write(`X jest dodatni, parzysty`)
+                }
+            }
+            else if ((x % 2 == 0) || (y == 0)) {
+                document.write(`Y jest 0`)
+            }
+        }
+
+        document.write('<br> <br>')
+        // 5x text 'egzamin tuż tuż...'
+        for (i = 0; i <= 5; i++) {
+            document.write(`egzamin tuż tuż... <br>`)
+        }
+        document.write('<br> <br>')
+
+        document.write(`<ul>`)
+
+        let im = ['Oliwier', 'Kuba G', 'Ryba', 'Szymon', 'Tymek', 'Filip', 'Ewa']
+        // im.push = "Olga"
+        let ilosc = im.length
+        console.log(`Ilość elementów w tablicy: ${ilosc}`);
+
+        im.forEach(imie => {
+            document.write(`<li>${imie} <br></li>`)
+        })
+
+        document.write(`</ul>`)
+
+        // zwraca tylko liczby parzyste 0-30
+        for (let a = 0; a <= 30; a += 2) {
+            document.write(a, " ")
+        }
+
+        document.write(`<br/>`)
+
+        // wersja z instrukcją warunkową
+        for (let b = 0; b <= 30; b++) {
+            if (b % 2 == 0) {
+                document.write(b, " ")
+            }
+        }
+
+        let zm1 = "ćwiczenie"
+        let zm2 = 123
+        let zm3 = 3.75
+        let zm4 = true
+
+        document.write(`<br/>typ zmiennej: `)
+        document.write(typeof (zm1), "<br/>", typeof (zm2), "<br/> ", typeof (zm3), "<br/> ", typeof (zm4))
+        document.write("<br /> <hr>")
+        let liczby = [123, 0, 543, 3, 788, 1000]
+        let arrayIlosc = liczby.length
+
+        function porownaj(a, b) {
+            return a - b
+        }
+        liczby.sort(porownaj)
+        for (let c = 0; c < arrayIlosc; c++) {
+            document.write(liczby[c], " ")
+        }
+
+        //konwersja galonów na litry
+        // 1 gal = 3.8 L
+
+        function przelicz() {
+            let gal = document.querySelector('#galony').value
+            let razem = (gal * 3.8).toFixed(2)
+            document.querySelector('#info').innerHTML = `${gal} to ${razem} litrów`
+        }
+    </script>
+</body>
+
+</html>
