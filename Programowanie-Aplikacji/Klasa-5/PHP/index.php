@@ -11,6 +11,7 @@
     <h2>Strona lądowania</h2>
     <ul>
         <li><a href="zad_restauracja/#">Strona 1</a></li>
+        <li><a href="ryby/index.php">Ryby</a></li>
     </ul>
 </body>
 

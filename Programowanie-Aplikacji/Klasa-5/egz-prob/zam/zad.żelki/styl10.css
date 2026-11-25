@@ -1,0 +1,63 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Helvetica;
+}
+.odnosnik {
+	background-image: url('cukierki1.jpg');
+	padding-right: 30px;
+	padding-bottom: 120px;
+	font-size: 120%;
+	text-decoration: none;
+}
+
+h1 {
+	letter-spacing: 20px;
+	font-size: 250%;
+}
+
+.gora {
+	background-color: rgb(146, 184, 112);
+	text-align: center;
+	height: 170px;
+	display: flex;
+}
+.lewy {
+	width: 50%;
+}
+.prawy {
+	width: 50%;
+}
+
+header,
+footer {
+	background-color: rgb(100, 61, 49);
+	color: white;
+	text-align: center;
+	height: 80px;
+	padding: 5px;
+}
+
+main {
+	background-color: rgb(146, 184, 112);
+	display: flex;
+	flex-direction: row;
+	height: 450px;
+}
+
+aside {
+	width: 50%;
+}
+
+section {
+	width: 50%;
+}
+table,
+td {
+	border: 2px dashed green;
+	margin: 30px;
+	padding: 20px;
+}

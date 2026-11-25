@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabryka cukierków</title>
+    <link rel="stylesheet" href="styl10.css">
+</head>
+
+<body>
+    <div class="gora">
+        <div class="lewy">
+            <a href="zamowienia.html" class="odnosnik">zamów cukierki</a>
+        </div>
+        <div class="prawy">
+            <a href="index.html"><img src="cukierki4.png" alt="nasze logo"></a>
+
+
+        </div>
+    </div>
+    <header>
+        <h1>Strefa zamówień</h1>
+    </header>
+    <main>
+        <aside>
+            Numer kształtu : <br>
+            <input type="number" id="ksztalt"> <br>
+            skomponuj swój kolor, podaj RGB: <br>
+            r: <input type="number" id="r">
+            g: <input type="number" id="g">
+            b: <input type="number" id="b"> <br>
+            <input type="button" value="Zamówienie" onclick="zamow()">
+            <p id="paragraf">Twoje zamówienie</p>
+            <input type="button" value="Kolor" id="kolor">
+
+        </aside>
+        <section>
+            <h2>Nasza oferta</h2>
+            <table>
+                <tr>
+                    <td>Kształty</td>
+                    <td rowspan="2">Możesz <br>zamówić dowolny kolor cukierka</td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li>cytryn</li>
+                            <li>liść</li>
+                            <li>banan</li>
+                        </ol>
+                    </td>
+
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        autor strony: <b>00000000000</b>
+    </footer>
+
+    <script>
+        function zamow() {
+            let ksztalt = document.getElementById('ksztalt').value
+            if (ksztalt == 1) {
+                document.querySelector('#paragraf').innerHTML = `Twoje zamówienie to cukierek cytryna`;
+            } else if (ksztalt == 2) {
+                document.querySelector('#paragraf').innerHTML = `Twoje zamówienie to cukierek liść`;
+            }
+            else if (ksztalt == 3) {
+                document.querySelector('#paragraf').innerHTML = `Twoje zamówienie to cukierek banan`;
+            } else {
+                document.querySelector('#paragraf').innerHTML = `Twoje zamówienie to cukierek inny`;
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
