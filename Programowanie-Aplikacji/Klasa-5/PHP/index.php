@@ -12,6 +12,7 @@
     <ul>
         <li><a href="zad_restauracja/#">Strona 1</a></li>
         <li><a href="ryby/index.php">Ryby</a></li>
+        <li><a href="zad.BMI/waga.html">zadanie bmi</a></li>
     </ul>
 </body>
 
